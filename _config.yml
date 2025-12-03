@@ -1,0 +1,28 @@
+title: "KS Tech Notes"
+name: "Sachin"
+description: "Notes on LLMs, Cloud and Systems Architecture."
+remote_theme: "mmistakes/minimal-mistakes"
+
+# Site settings
+url: "https://sachin19183.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+
+plugins:
+  - jekyll-include-cache
+
+# Minimal Mistakes settings
+paginate: 5
+paginate_path: "/page:num/"
+breadcrumbs: true
+
+author:
+  name: "Sachin Sharma"
+  bio: "Product Owner & Solution Architect expanding into GenAI & Cloud."
+  location: "India"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/sachin19183"
