@@ -34,13 +34,10 @@ The evolution of NLP modeling has focused on converting raw text into structured
 
 A simplified view of how Language AI systems process text:
 
-
-
-                                                     |------------------> Text Output (Generative modelling)
-                                                     |
-     Text input       -->    Language AI             |------------------>  Embeddings (Numeric values)
-(unstructured data)        (Processes the input text)|
-                                                     |------------------>  Classification (Identify targets)
+Text Input  →       Language AI System   →  Output
+(unstructured data)                      ├─ Embeddings (numeric meaning)
+                                         ├─ Text Generation (new content)
+                                         └─ Classification (decisions)
 
 
 These numeric representations help models **capture semantic meaning** behind words — instead of treating them as plain symbols.
