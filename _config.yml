@@ -28,9 +28,3 @@ author:
     - label: "GitHub"
       icon: "fab fa-github"
       url: "https://github.com/sachin19183"
-# Navigation
-nav:
-  - title: "Home"
-    url: /
-  - title: "About"
-    url: /about/
