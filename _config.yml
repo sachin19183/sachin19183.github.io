@@ -26,3 +26,7 @@ author:
     - label: "GitHub"
       icon: "fab fa-github"
       url: "https://github.com/sachin19183"
+# Navigation
+header_pages:
+  - index.md
+  - about.md
