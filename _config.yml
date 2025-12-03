@@ -2,6 +2,8 @@ title: "KS Tech Notes"
 name: "Sachin"
 description: "Notes on LLMs, Cloud and Systems Architecture."
 remote_theme: "mmistakes/minimal-mistakes"
+include:
+  - _pages
 
 # Site settings
 url: "https://sachin19183.github.io"
@@ -27,6 +29,8 @@ author:
       icon: "fab fa-github"
       url: "https://github.com/sachin19183"
 # Navigation
-header_pages:
-  - index.md
-  - about.md
+nav:
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about/
