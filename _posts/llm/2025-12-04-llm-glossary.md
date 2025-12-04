@@ -5,8 +5,6 @@ date: 2025-12-04
 categories: [LLM, Fundamentals]
 ---
 
-# LLM Text Processing Glossary
-
 A beginner-friendly glossary of key terminology used in Large Language Models (LLMs) and natural language text processing.
 
 ---
