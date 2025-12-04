@@ -88,8 +88,11 @@ This leads to surprisingly meaningful behavior:
 
 Embeddings can have many properties to represent the meaning of a word. 
 Since the size of embeddings is fixed, their properties are chosen to create a mental representation of the word
+
 📌 *Illustration:*  
 ![Embeding representation](/images/word2vec.png)
+
+Together, these properties make sense to a computer and serve as a good way to translate human language into computer language.
 
 ---
 
