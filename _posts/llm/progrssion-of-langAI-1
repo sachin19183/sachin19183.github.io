@@ -27,7 +27,7 @@ It provides a simple way to understand early text processing and how modern LLMs
    This creates a numeric **vector representation** of text.
 
 📌 *Illustration:*  
-![Bag of Words](assets/bag_of_words.png)
+![Bag of Words](../images/bag_of_words.png)
 
 ---
 
@@ -48,7 +48,7 @@ In 2013, **Word2Vec** became one of the first highly successful techniques for c
 It is trained using **large corpora** of text (e.g., Wikipedia) using **neural networks** with weights (parameters) between layers.
 
 📌 *Illustration:*  
-![Neural Network](assets/neural_network.png)
+![Neural Network](../images/neural networks.png)
 
 ---
 
@@ -63,5 +63,31 @@ Example sentence:
 - “mat” is near “sat”
 - “cat” and “mat” appear in similar contexts → **similar meanings**
 
-Initially, every word gets a random vector like:
+Initially, every word gets a random vector like: [0.12, -0.44, 0.88, ...]
+
+Then the model repeatedly tries to **predict neighboring words**:
+
+| Model Prediction | Result |
+|-----------------|--------|
+| Correct | reward / reinforce vector positions |
+| Wrong | adjust vectors |
+
+Over time, **related words cluster together** in vector space:
+
+| Words | Relationship |
+|-------|--------------|
+| king ↔ queen | close (similar roles) |
+| coffee ↔ dog | far apart (unrelated) |
+
+This leads to surprisingly meaningful behavior:
+
+> **king – man + woman ≈ queen**
+
+Embeddings can have many properties to represent the meaning of a word. 
+Since the size of embeddings is fixed, their properties are chosen to create a mental representation of the word
+📌 *Illustration:*  
+![Embeding representation](../images/word2vec.png)
+---
+
+
 
