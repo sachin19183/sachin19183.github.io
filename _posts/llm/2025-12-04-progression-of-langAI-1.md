@@ -48,7 +48,7 @@ In 2013, **Word2Vec** became one of the first highly successful techniques for c
 It is trained using **large corpora** of text (e.g., Wikipedia) using **neural networks** with weights (parameters) between layers.
 
 📌 *Illustration:*  
-![Neural Network](../images/neural networks.png)
+![Neural Network](../images/neural%20networks.png)
 
 ---
 
@@ -83,11 +83,16 @@ This leads to surprisingly meaningful behavior:
 
 > **king – man + woman ≈ queen**
 
+---
+
+
 Embeddings can have many properties to represent the meaning of a word. 
 Since the size of embeddings is fixed, their properties are chosen to create a mental representation of the word
 📌 *Illustration:*  
 ![Embeding representation](../images/word2vec.png)
+
 ---
+
 
 
 
