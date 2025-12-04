@@ -1,0 +1,61 @@
+---
+layout: single
+title: "Introduction to Large Language Models & How They Understand Text"
+date: 2025-12-03
+categories: [LLM, Fundamentals]
+---
+
+Large Language Models (LLMs) have existed for years, but they entered mainstream awareness in 2022 with the launch of ChatGPT.
+
+Within days, millions of users adopted ChatGPT — making it one of the fastest-growing technologies in history. This moment significantly transformed the field of **Language Artificial Intelligence or LanguageAI**
+It is a field characterized by the development of systems capable of understanding & generating human language.It can be used interchangebly with **Natural Language Processing (NLP)**.
+
+---
+
+## 🧠 Why Language is Hard for Machines
+
+Human language is deeply rich, contextual, and ambiguous. We understand meaning through:
+
+- Tone
+- Culture
+- Grammar
+- Experience
+
+Computers, however, process everything as sequences of 0s and 1s. Language which comes naturally to us humans is actually very tricky for computers to comprehend. 
+Why? Because text is unstructured in nature and loses its meaning when represented as 0's and 1's. 
+So throughout the history of LanguageAI, there has been a large focus on representing language in structured manner so that it can more easily be used by computers.
+
+So a major challenge in Language AI has always been:
+
+> How do we represent text in a way that machines can understand?
+
+---
+
+## 🧩 Solving the Representation Challenge
+
+The evolution of NLP modeling has focused on converting raw text into structured, meaningful representations.
+
+Language AI systems process the unstructured input text to produce one of the following:
+
+- **Embeddings:** Convert words/sentences into numeric meaning
+- **Text Generation:** Predict the next word to generate new text
+- **Classification:** Identify categories, intent, or sentiment
+
+Basic process for it is:
+
+1. **Text Input** – unstructured sentences or documents.
+2. **Language AI Processing** – the model tokenizes the text, converts it into numeric representations, and applies learned patterns.
+3. **Different Types of Outputs**, such as:
+   - **Text Generation** (creating new text)
+   - **Embeddings** (numeric representations that capture meaning)
+   - **Classification** (assigning labels, intent, or sentiment)
+
+
+These numeric representations help models **capture semantic meaning** behind words — instead of treating them as plain symbols.
+
+---
+
+This post marks the beginning of my journey to document what I learn about LLMs — from concepts to practical applications.
+
+Stay tuned as I go deeper into how these models work and how they are shaping intelligent systems.
+
