@@ -27,7 +27,7 @@ It provides a simple way to understand early text processing and how modern LLMs
    This creates a numeric **vector representation** of text.
 
 📌 *Illustration:*  
-![Bag of Words](../images/bag_of_words.png)
+![Bag of Words](/images/bag_of_words.png)
 
 ---
 
