@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Docker Knowledge Index
-permalink: /Docker/
+permalink: /DOCKER/
 ---
 
 # 🐳 Docker — Knowledge Index
