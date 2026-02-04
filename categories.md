@@ -31,7 +31,7 @@ Prompt engineering, RAG, agents, embeddings, and LLM systems.
 ---
 
 
-## 🐳  Docker
+## 🐳 Docker
 
 Architecture, networking, containers.
 
