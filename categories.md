@@ -31,11 +31,11 @@ Prompt engineering, RAG, agents, embeddings, and LLM systems.
 ---
 
 
-## ☁️ Docker
+## 🐳  Docker
 
 Architecture, networking, containers.
 
-👉 [Open DOCKER Index](../DOCKER/)
+👉 [Open DOCKER Index](/DOCKER/)
 
 ---
 
