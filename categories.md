@@ -17,7 +17,7 @@ Browse my notes and learnings by domain.
 
 ML fundamentals, pipelines, training, and deployment patterns.
 
-👉 [Open ML Index](../ML/)
+👉 [Open ML Index](/ML/)
 
 ---
 
