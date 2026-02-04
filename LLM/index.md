@@ -13,7 +13,6 @@ This section contains my learnings, experiments, and architecture notes on Large
 ## 📚 Posts
 
 <ul>
-{% raw %}
 {% for post in site.categories.LLM %}
   <li>
     <a href="{{ post.url }}">
@@ -21,7 +20,6 @@ This section contains my learnings, experiments, and architecture notes on Large
     </a>
   </li>
 {% endfor %}
-{% endraw %}
 </ul>
 
 ---
