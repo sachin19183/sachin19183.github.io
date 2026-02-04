@@ -13,7 +13,7 @@ This section contains my learnings, experiments, and architecture notes on Large
 ## 📚 Posts
 
 <ul>
-{% for post in site.categories.LLM %}
+{% for post in site.categories.LLM | reverse %}
   <li>
     <a href="{{ post.url }}">
       {{ post.date | date: "%Y-%m-%d" }} — {{ post.title }}
