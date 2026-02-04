@@ -2,7 +2,8 @@
 layout: single
 title: History / Progression of Language AI Part-1
 date: 2025-12-04
-categories: [LLM, Fundamentals]
+categories: [LLM]
+tags: [Fundamentals]
 ---
 
 ## Bag of Words
