@@ -44,7 +44,7 @@ Architecture, networking, containers.
 
 Architecture, networking, IAM, serverless, and certification insights.
 
-👉 [Open GCP Index](../GCP/)
+👉 [Open GCP Index](/GCP/)
 
 ---
 
