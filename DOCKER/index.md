@@ -10,7 +10,7 @@ This section documents my learnings on containerization, Docker architecture, im
 
 ---
 
-## 📚 Posts
+## 📚  Posts
 
 <ul>
 {% assign posts = site.categories.Docker | sort: "date" %}
