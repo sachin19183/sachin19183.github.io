@@ -26,7 +26,7 @@ ML fundamentals, pipelines, training, and deployment patterns.
 
 Prompt engineering, RAG, agents, embeddings, and LLM systems.
 
-👉 [Open LLM Index](../LLM/)
+👉 [Open LLM Index](/LLM/)
 
 ---
 
