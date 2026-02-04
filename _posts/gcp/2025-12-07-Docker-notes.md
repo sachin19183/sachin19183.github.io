@@ -1,3 +1,11 @@
+---
+layout: single
+title: Introduction to Dockers
+date: 2025-12-07
+categories: [DOCKER]
+tags: [Fundamentals]
+---
+
 Docker was first released in March 2013. It is developed by Solomon Hykes & Sebastien Pahl. 
 Docker is a set of platform as a service (PAAS) that uses OS level virtualization whereas VMware uses hardware level virtualization.
 
