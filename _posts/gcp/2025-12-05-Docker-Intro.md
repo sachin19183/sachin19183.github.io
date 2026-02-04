@@ -2,7 +2,8 @@
 layout: single
 title: Introduction to Dockers
 date: 2025-12-05
-categories: [DOCKER, Fundamentals]
+categories: [DOCKER]
+tags: [Fundamentals]
 ---
 
 With this post , we begin to explore cloud envrironment. When i first started studying clouds, it seemed very hard and complex because of so many interdependent things which we need to learn and understand before we can begin with the actual cloud. The base for it is virtualization, Dockers and containers. 
