@@ -142,10 +142,10 @@ hostname
 
 Example:
 
-|Container	|Hostname                         | 
-| --------- | ------------------------------- |
-|A	        |  llm-api                        | 
-|B	        |  vector-db                      |
+| Container | Hostname  |
+| --------- | --------- |
+| A         | llm-api   |
+| B         | vector-db |
 
 Useful for distributed systems + logging.
 
