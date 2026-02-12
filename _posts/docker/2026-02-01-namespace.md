@@ -18,6 +18,7 @@ Imagine 3 containers running on a host:
 | B         | PID 1, different IP             |
 | Host      | Real processes + all containers |
 
+
 Each container believes:
 
 > “I am the only system running.”
