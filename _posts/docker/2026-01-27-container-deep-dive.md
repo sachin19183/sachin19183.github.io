@@ -127,7 +127,7 @@ You can run as root but drop dangerous powers:
 
 ```bash
 docker run --cap-drop=ALL --cap-add=NET_BIND_SERVICE nginx
-```bash
+```
 
 This enables port binding without giving full root control.
 
