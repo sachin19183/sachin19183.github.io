@@ -9,14 +9,11 @@ Containers are not a single technology.
 
 They are a **composition of multiple Linux kernel primitives** working together to create what we call *modern containers* today.
 
-In simple terms:
+**In simple terms:**
 
-Isolation (Namespaces)  
-+ Resource Control (cgroups)  
-+ Layered Images (Union Filesystems)  
-+ Security (seccomp + Capabilities)  
-+ Networking (veth + bridges)  
-= Containers
+Isolation (Namespaces) + Resource Control (cgroups) +  
+Layered Images (Union Filesystems) + Security (seccomp + Capabilities) +  
+Networking (veth + bridges) = **Containers**
 
 This post dives into each building block.
 
