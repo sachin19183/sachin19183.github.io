@@ -92,7 +92,7 @@ Example image stack:
 Base OS (Ubuntu) + Python runtime + ML libraries + Model code
 Only changed layers are stored or transferred.
 
-###🤖 Why this matters for AI images
+### 🤖 Why this matters for AI images
 
 AI/LLM containers are massive because they include:
 
@@ -214,7 +214,8 @@ It changed the root filesystem for a process. But it lacked:
 - Process isolation
 - Resource limits
 
-###🧭 Mapping Kernel Features to Kubernetes
+### 🧭 Mapping Kernel Features to Kubernetes
+
 | Kernel Primitive | Kubernetes Feature       |
 | ---------------- | ------------------------ |
 | Namespaces       | Pod isolation            |
@@ -239,10 +240,8 @@ Modern AI infrastructure is built directly on Linux kernel constructs.
 
 ## 🏁 Closing Thoughts
 
-Containers feel lightweight and magical at the surface.
-
+Containers feel lightweight and magical at the surface. 
 But underneath, they are a carefully engineered stack of:
-
 - Isolation primitives
 - Resource governors
 - Filesystem innovations
