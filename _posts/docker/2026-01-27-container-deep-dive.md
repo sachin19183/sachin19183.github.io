@@ -67,7 +67,7 @@ Without cgroups, a single container could consume the entire host.
 
 ```bash
 docker run -m 512m --cpus=1 nginx
-
+```
 This ensures the container cannot exceed defined limits.This is the foundation of multi-tenant compute.
 
 ---
@@ -89,10 +89,7 @@ Containers rely on layered filesystems.
 **How layering works:**
 
 Example image stack:
-Base OS (Ubuntu)
-+ Python runtime
-+ ML libraries
-+ Model code
+Base OS (Ubuntu) + Python runtime + ML libraries + Model code
 Only changed layers are stored or transferred.
 
 ###🤖 Why this matters for AI images
@@ -113,11 +110,13 @@ Without union FS, AI container distribution would be painfully slow.
 ---
 
 ## 🔐 4️⃣ Capabilities — Fine-Grained Privileges
-In traditional linux model, root user has unlimited power. rm -rf * executed from / can wipe out everything as a root user.
-Container needed a saftey net against such concerns. Linux Capabilities split root privileges into smaller units.
+In traditional linux model, root user has unlimited power.
+```bash
+rm -rf *
+```
+executed from / can wipe out everything as a root user.Container needed a saftey net against such concerns. Linux Capabilities split root privileges into smaller units.
 
 Examples:
-
 - CAP_NET_ADMIN
 - CAP_SYS_TIME
 - CAP_SYS_BOOT
@@ -125,8 +124,11 @@ Examples:
 **Container impact:**
 
 You can run as root but drop dangerous powers:
+
 ```bash
 docker run --cap-drop=ALL --cap-add=NET_BIND_SERVICE nginx
+```bash
+
 This enables port binding without giving full root control.
 
 **Key benefit:** Multi-tenant security hardening.
