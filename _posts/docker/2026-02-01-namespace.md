@@ -12,6 +12,8 @@ In other words, a namespace makes process think that it is alone on the system. 
 **Mental Model**
 
 Imagine 3 containers running on a host:
+
+
 | Container | What it sees                    |
 | --------- | ------------------------------- |
 | A         | PID 1, own IP                   |
@@ -54,6 +56,18 @@ Namespaces are:
 
 There are several, but these 6 matter most:
 
+
+| Namespace | Isolates       |  Conatiner effect                  |
+|-----------|----------------|------------------------------------|
+| PID       | Process ID     | Container has its own process tree |
+| NET       | Networking     | Own IP, Port, Interface            |
+| MNT       | Mount points   | Own filesystem view                |
+| UTS       | Hostname       | Container hostname                 |
+| IPC       | Shared Memory  | Isolated messaging                 |
+| USER      | UID/GID mapping| root inside != root outside        |
+
+
+
 ---
 
 ### 1️⃣ PID Namespace — Process Isolation
@@ -89,11 +103,11 @@ This is why entrypoint matters in Docker.
 ### 2️⃣ NET Namespace — Network Isolation
 
 Each namespace gets its own:
-
 - IP address
 - Interfaces
 - Routing table
 - Ports
+
 for example:
 Container A:
 ```bash
@@ -152,4 +166,62 @@ Useful for distributed systems + logging.
 
 ---
 
-### 
+### 5️⃣ IPC Namespace — Interprocess Communication
+
+IPC Isolates:
+- Shared memory
+- Semaphores
+- Message queues
+
+IPC prevents processes from different containers sharing IPC channels. It is very important for:
+- Databases
+- High-performance apps
+
+---
+
+### 6️⃣ USER Namespace — User Isolation
+
+Maps user IDs inside container to different IDs on host.
+
+Example:
+
+|Inside container	   | On host       |
+|--------------------|---------------|
+| root (UID 0)       | UID 100000    |
+
+So container root is not equal to the host root. This is a huge security improvement.
+
+---
+
+### How it works practically
+
+Example:
+
+```bash
+lsns
+PID   TYPE  PATH
+4021  pid   /proc/4021/ns/pid
+4021  net   /proc/4021/ns/net
+```
+Each container process belongs to multiple namespaces.
+
+When we run nginx on docker
+```bash
+docker run nginx
+```
+Docker creates namespaces for that container. so nginx thinks :
+- Its PID is 1
+- It owns the port 80
+- It has its own root Filesystem
+- It has its own hostname
+
+---
+
+ ### Role in Kubernetes
+
+Every Pod gets namespaces:
+- Pod containers share NET namespace → same IP
+- But separate PID namespaces (unless shared)
+- Shared volumes via MNT namespace
+
+This is why multi-container pods can talk via localhost.
