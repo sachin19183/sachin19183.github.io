@@ -193,7 +193,7 @@ So container root is not equal to the host root. This is a huge security improve
 
 ---
 
-### How it works practically
+## How it works practically
 
 Example:
 
@@ -217,7 +217,7 @@ Docker creates namespaces for that container. so nginx thinks :
 
 ---
 
- ### Role in Kubernetes
+ ## Role in Kubernetes
 
 Every Pod gets namespaces:
 - Pod containers share NET namespace → same IP
