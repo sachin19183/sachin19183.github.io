@@ -3,10 +3,14 @@ layout: home
 title: "KS Tech Notes"
 ---
 
-Welcome to my notes on Large Language Models, Cloud, and Systems Architecture.
+Welcome to KS Tech Notes — my structured notebook on Large Language Models, Cloud, and Systems Architecture.
 
-This is a living notebook of what I learn and build — from theory to practical applications.
-I also have another blog where i share my philosophical notes to those who feel stuck and are looking for motivation
+This site documents what I learn and build — from foundational theory to real-world implementation across AI and Cloud domains.
+It is designed as a living repository of technical notes, experiments, and architecture explorations.
+
+>I operate under the persona of KS Sage Mode — a Knowledge Seeker in an elevated deep-work state (inspired by the Sage Mode archetype), where cloud architecture, AI systems, and research thinking converge.
+
+Alongside technology, I also write reflections on resilience, discipline, and inner growth for those navigating personal and professional crossroads.
 
 ➡️ [Silent Warrior Philosophy](https://sachin19183.github.io/path-of-the-silent-warrior/)
 
