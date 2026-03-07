@@ -20,31 +20,31 @@ Alongside technology, I occasionally write reflections on resilience, discipline
 
 ---
 
-⚙️ Operating Principles
+⚙️ **Operating Principles**
 
 The work documented here follows a few simple principles:
 
-Deep Work — focused exploration of complex systems without distraction
+**Deep Work** — focused exploration of complex systems without distraction
 
-Systems Thinking — understanding interactions across infrastructure, models, and architecture
+**Systems Thinking** — understanding interactions across infrastructure, models, and architecture
 
-Build to Understand — implementing ideas to internalize how systems actually work
+**Build to Understand** — implementing ideas to internalize how systems actually work
 
-Document the Journey — maintaining structured notes for clarity and future reference
+**Document the Journey** — maintaining structured notes for clarity and future reference
 
 ---
 
-🎯 Current Focus
+🎯 **Current Focus**
 
 Areas I am currently exploring and building:
 
-Game Backend Systems — building a game backend using Go + Python
+- Game Backend Systems — building a game backend using Go + Python
 
-Containerized Development — deploying services with Docker-based workflows
+- Containerized Development — deploying services with Docker-based workflows
 
-Service Architecture — experimenting with modular backend services and APIs
+- Service Architecture — experimenting with modular backend services and APIs
 
-Systems Integration — connecting gameplay logic with scalable backend infrastructure
+- Systems Integration — connecting gameplay logic with scalable backend infrastructure
 
 These notes evolve as I study, experiment, and build systems.
 
