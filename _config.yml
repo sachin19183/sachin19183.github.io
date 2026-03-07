@@ -1,6 +1,6 @@
-title: "KS Tech Notes"
+title: "Engineering Field Notes"
 name: "Sachin"
-description: "Notes on LLMs, Cloud and Systems Architecture."
+description: "Notes and explorations across Cloud Infrastructure, AI Systems, and Distributed Architecture."
 remote_theme: "mmistakes/minimal-mistakes"
 include:
   - _pages
@@ -22,7 +22,7 @@ breadcrumbs: true
 
 author:
   name: "Sachin Sharma"
-  bio: "Product Owner & Solution Architect expanding into GenAI & Cloud."
+  bio: "Exploring cloud infrastructure, AI systems, and modern software architecture through disciplined deep work."
   location: "India"
   links:
     - label: "GitHub"
