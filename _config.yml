@@ -9,6 +9,7 @@ include:
 url: "https://sachin19183.github.io"
 baseurl: ""
 google_analytics: G-G0968414TJ
+google_site_verification: KefY_ZWqzA3q_Uxxlf5eZa7d6g1H0xSPPg-VcgbdlBA
 
 # Build settings
 markdown: kramdown
