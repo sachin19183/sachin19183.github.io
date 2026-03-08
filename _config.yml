@@ -8,6 +8,7 @@ include:
 # Site settings
 url: "https://sachin19183.github.io"
 baseurl: ""
+google_analytics: G-G0968414TJ
 
 # Build settings
 markdown: kramdown
