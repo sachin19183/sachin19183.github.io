@@ -61,6 +61,6 @@ Explore my structured learning notes across Cloud and AI domains.
 | 🤖 LLM | Prompt engineering, RAG, agents, embeddings | [Open](/LLM/) |
 | 📊 ML | ML systems, pipelines, model deployment | [Open](/ML/) |
 
-Coming Soon: My experimental projects based on hwat i have learned in  
+Coming Soon: My experimental projects based on what i have learned so far  
 [Dojo of Silent Warrior](https://thesilentwarrior.org)
 ---
