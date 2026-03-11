@@ -7,7 +7,7 @@ permalink: /categories/
 
 # 🧠 Knowledge Repository
 
-Welcome to my tech knowledge hub. I have tried to document my learnings in hope that it benefits you in your learningjourney.  
+Welcome to my tech knowledge hub. I have tried to document my learnings in hope that it benefits you in your learning journey.  
 You can browse my notes and learnings by domain.
 
 ---
@@ -54,4 +54,4 @@ Prompt engineering, RAG, agents, embeddings, and LLM systems.
 
 
 
-_This repository evolves as I continue my cloud & AI journey._
+_This repository evolves as I continue on my learning journey in hope that it can help you in some ways._
