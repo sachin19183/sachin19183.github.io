@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Knowledge Index
+title: Knowledge repository Index
 permalink: /categories/
 ---
 
 
-# 🧠 KS Knowledge Repository
+# 🧠 Knowledge Repository
 
-Welcome to my structured tech knowledge hub.  
-Browse my notes and learnings by domain.
+Welcome to my tech knowledge hub. I have tried to document my learnings in hope that it benefits you in your learningjourney.  
+You can browse my notes and learnings by domain.
 
 ---
 
@@ -20,6 +20,14 @@ Architecture, networking, containers.
 
 ---
 
+## ☁️ Google Cloud Platform (GCP)
+
+Architecture, networking, IAM, serverless, and certification insights.
+
+👉 [Open GCP Index](/GCP/)
+
+---
+
 ## 📊 Machine Learning (ML)
 
 ML fundamentals, pipelines, training, and deployment patterns.
@@ -27,7 +35,6 @@ ML fundamentals, pipelines, training, and deployment patterns.
 👉 [Open ML Index](/ML/)
 
 ---
-
 
 ## 🤖 Large Language Models (LLM)
 
@@ -37,14 +44,11 @@ Prompt engineering, RAG, agents, embeddings, and LLM systems.
 
 ---
 
+## Coming Soon
 
-## ☁️ Google Cloud Platform (GCP)
+   Working project lab in golang, python, containers
 
-Architecture, networking, IAM, serverless, and certification insights.
 
-👉 [Open GCP Index](/GCP/)
-
----
 
 
 
