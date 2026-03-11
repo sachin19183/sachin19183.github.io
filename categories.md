@@ -12,6 +12,13 @@ Browse my notes and learnings by domain.
 
 ---
 
+## 🐳 Docker
+
+Architecture, networking, containers.
+
+👉 [Open DOCKER Index](/DOCKER/)
+
+---
 
 ## 📊 Machine Learning (ML)
 
@@ -27,15 +34,6 @@ ML fundamentals, pipelines, training, and deployment patterns.
 Prompt engineering, RAG, agents, embeddings, and LLM systems.
 
 👉 [Open LLM Index](/LLM/)
-
----
-
-
-## 🐳 Docker
-
-Architecture, networking, containers.
-
-👉 [Open DOCKER Index](/DOCKER/)
 
 ---
 
