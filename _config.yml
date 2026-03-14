@@ -31,12 +31,13 @@ breadcrumbs: true
 
 author:
   name: "Sachin Sharma"
+  avatar: "/assets/images/silentWarrorDP.png"
   bio: "Exploring cloud infrastructure, AI systems, and modern software architecture through disciplined deep work."
   location: "India"
   links:
-    - label: "GitHub"
+    - label: "Codeberg"
       icon: "fab fa-github"
-      url: "https://github.com/sachin19183"
+      url: "https://codeberg.org/silentwarrior"
     - label: "Path of the Silent Warrior"
       icon: "fas fa-fire"
       url: "https://thesilentwarrior.org/path-of-the-silent-warrior/"
