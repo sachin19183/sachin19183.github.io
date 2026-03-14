@@ -36,8 +36,11 @@ author:
   location: "India"
   links:
     - label: "Codeberg"
-      icon: "fab fa-github"
+      icon: "fab fa-git-alt"
       url: "https://codeberg.org/silentwarrior"
     - label: "Path of the Silent Warrior"
       icon: "fas fa-fire"
       url: "https://thesilentwarrior.org/path-of-the-silent-warrior/"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/sachin-sharma-b36b596"
