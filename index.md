@@ -1,6 +1,7 @@
 ---
 layout: home
 title: "Engineering Field Notes"
+author_profile: true
 ---
 
 Cloud Infrastructure • AI Systems • Distributed Architecture
