@@ -28,6 +28,7 @@ plugins:
 paginate: 5
 paginate_path: "/page:num/"
 breadcrumbs: true
+minimal_mistakes_skin: "Transparent Dark"
 
 author:
   name: "Sachin Sharma"
