@@ -4,7 +4,6 @@ description: "Notes and explorations across Cloud Infrastructure, AI Systems, an
 remote_theme: "mmistakes/minimal-mistakes"
 include:
   - _pages
-posts_limit: 3
 
 # Site settings
 url: "https://thesilentwarrior.org"
@@ -26,8 +25,6 @@ plugins:
   - jekyll-sitemap
 
 # Minimal Mistakes settings
-#paginate: 5
-#paginate_path: "/page:num/"
 breadcrumbs: true
 minimal_mistakes_skin: "neon"
 
