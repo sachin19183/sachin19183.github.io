@@ -26,7 +26,7 @@ plugins:
 
 # Minimal Mistakes settings
 breadcrumbs: true
-minimal_mistakes_skin: "plum"
+minimal_mistakes_skin: "contrast"
 
 author:
   name: "Sachin Sharma"
