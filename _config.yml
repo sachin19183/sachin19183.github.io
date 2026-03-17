@@ -35,7 +35,7 @@ author:
   bio: "A knowledge seeker fighting the lazy mind to learn and build something new every day."
   location: "India"
   links:
-    - label: "Codeberg"
+    - label: "Codeberg repo"
       icon: "fab fa-git-alt"
       url: "https://codeberg.org/silentwarrior"
     - label: "Path of the Silent Warrior"
