@@ -5,7 +5,7 @@ author_profile: true
 ---
 
 Hey Fellow Reader!!
-  I have been a telecom professional for the last 20 years and have learned a lot on the job. As a millennial, I have seen perhaps too many technological changes to fully master. I wanted to help fellow learning enthusiasts by providing an open-source platform of hands-on technical notes and insights.
+  I have been a telecom professional for the last 20 years and have learned a lot. As a millennial, I have seen perhaps too many technological changes to fully master. I wanted to help fellow learning enthusiasts by providing an open-source platform of hands-on technical notes and insights.
 
 ---
 
