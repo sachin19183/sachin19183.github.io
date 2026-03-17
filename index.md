@@ -1,17 +1,15 @@
 ---
 layout: home
-title: "Tech Notes from Silent Warrior"
+title: "Silent Warrior Tech Notes"
 author_profile: true
 ---
 
 Hey Fellow Reader!!
-  I have been a telecom professional for the last 20 years and have learned a lot. As a millennial, I have seen perhaps too many technological changes to fully master. I wanted to help fellow learning enthusiasts by providing an open-source platform of hands-on technical notes and insights.
+  I’m a telecom professional with over 20 years of experience, continuously learning and adapting to evolving technologies. As a millennial, I’ve witnessed rapid shifts in the tech landscape—often too many to fully master. I wanted to help fellow learning enthusiasts by providing a free & open-source platform of hands-on technical notes and insights. So here we are :-)
 
 ---
 
-## 🧠 Browse Knowledge by Domain
-
-Explore my structured learning notes across Cloud and AI domains (You can always click on Topics for browsing through the notes).
+## Browse Knowledge by Domain
 
 | Domain | Description | Explore |
 |--------|-------------|---------|
@@ -20,7 +18,7 @@ Explore my structured learning notes across Cloud and AI domains (You can always
 | 🤖 LLM | Prompt engineering, RAG, agents, embeddings | [Open](/LLM/) |
 | 📊 ML | ML systems, pipelines, model deployment | [Open](/ML/) |
 
-Coming soon: My experimental projects based on what I have learned so far  
+**Coming soon:** My experimental projects based on what I have learned so far  
 [Dojo of Silent Warrior](https://thesilentwarrior.org)
 
 ---
