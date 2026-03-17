@@ -5,7 +5,7 @@ author_profile: true
 ---
 
 Hey Fellow Reader!!
-  I’m a telecom professional with over 20 years of experience, continuously learning and adapting to evolving technologies. As a millennial, I’ve witnessed rapid shifts in the tech landscape—often too many to fully master. I wanted to help fellow learning enthusiasts by providing a free & open-source platform of hands-on technical notes and insights. So here we are :-)
+  I’m a telecom professional with over 20 years of experience, continuously learning and adapting to evolving technologies. As a millennial, I’ve witnessed rapid shifts in the tech landscape—often too many to fully master. I wanted to help fellow learning enthusiasts by providing a free & open-source platform of hands-on technical notes and insights. So here we are 😊
 
 ---
 
