@@ -5,9 +5,23 @@ permalink: /about/
 ---
 
 Hi, I'm Sachin.
+
 This website is the culmination of a long-term wish to build a community where knowledge sharing is free and constructive.
-  In 2021, i started my second innings of upskilling myself and utilize my personal time effectively. Being a C developer for most of my career, golang felt the next best thing and i picked it up. Along the lines came machine learning wave and i picked up python. Then i felt the need to learn how to build and design applications in a cloud native environment.
-  I have struggled a lot mostly because of lack of discipline which pushed me learn and forget and then learn again cycle. To come out of it , i have decided to document my learnings which gives me an opportunity to stay in a continuous hand-on mode and also provides an opportunity to share and discuss things in a wider forum.
-  This blog is my learning journal — a space where I document concepts, insights, and experiments to help myself and anyone on a similar journey to grow.
+
+In 2021, I started my second innings of upskilling myself and utilizing my personal time more effectively. Having been a C developer for most of my career, Go felt like the next natural step, and I picked it up. Around the same time, the wave of machine learning drew me toward Python. This eventually led me to explore how to design and build applications in a cloud-native environment.
+
+I have struggled at times, mostly due to a lack of discipline, which pushed me into a cycle of learning, forgetting, and relearning. To break out of that cycle, I decided to document my learnings. This helps me stay in a continuous hands-on mode while also creating an opportunity to share and discuss ideas with a wider community.
+
+This blog is my learning journal — a space where I document concepts, insights, and experiments to help myself and anyone on a similar journey grow.
 
 Thanks for visiting!
+
+---
+
+## ⚖️ Disclaimer & Intent
+
+The content published on this website represents my personal views, learnings, and experiments, and does not reflect the views of my employer or any organization I am associated with.
+
+All material shared here is based on publicly available information, personal experience, or independent exploration. I do not disclose any confidential, proprietary, or sensitive information related to my employer or clients.
+
+This website is intended purely for educational and knowledge-sharing purposes and is not associated with any commercial activity.
