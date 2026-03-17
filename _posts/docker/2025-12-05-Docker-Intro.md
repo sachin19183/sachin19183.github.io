@@ -56,7 +56,12 @@ You can load any type of goods inside, seal it, and transport it globally. No on
 
 ## DOCKER
 
-Docker is an open source centralized platform designed to create, deploy & run applications.
+Docker is an open source centralized platform designed to create, deploy & run applications.Docker was first released in March 2013. It is developed by Solomon Hykes & Sebastien Pahl.
 Docker uses container on the host Operating system (OS) to run applications to use the same linux kernel as a system on the host computer, rather than creating a whole virtual OS.
 
 Before the docker era, many developers faced the problem that a particular code is running in their local system (dev environment) but when they deploy things in production, the application breaks down. This was probably because their were dependencies/ libraries missing in production which were present in dev and the developers were unaware about it.
+
+Docker is a set of platform as a service (PAAS) that uses OS level virtualization whereas VMware uses hardware level virtualization.
+I will touch upon hypervisors breifly as that will help you understand how cloud infra works. Type-1 Hypervisor runs directly on the system hardware without the need of OS. It is also known as baremetal hypervisor as they run directly on the hardware.
+
+Containers share the host OS kernel, so Windows containers require a Windows kernel, and Linux containers require a Linux kernel. Therefore, a Linux host cannot run Windows containers natively, and vice-versa. On Windows, Docker uses a lightweight virtual machine (WSL2 today, Hyper-V historically) to run Linux containers, while Windows containers can run directly on the Windows kernel using Windows Server Container or Hyper-V isolation.
