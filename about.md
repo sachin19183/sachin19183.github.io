@@ -8,8 +8,10 @@ Hi, I'm Sachin.
 
 I work at the intersection of business and technology — designing systems, improving workflows, and supporting digital transformation initiatives.
 
-After 20+ years in enterprise systems and telecom platforms, I’m now expanding into **Cloud** and **Generative AI** to build modern, intelligent solutions.
+Since 2021, i started my second innings of upskilling myself. Being a C developer for most of my career, golang felt the next best thing and i picked it up. Along the lines came machine learning wave and i pciked up python. Then i felt the need to learn how to build and design applications in a cloud native environment. 
 
-This blog is my learning journal — a space where I document concepts, insights, and experiments to help myself (and anyone on a similar journey) grow.
+I have struggled a lot mostly because of lack of discipline which pushed me learn and forget and then learn again cycle. To come out of it , i have decided to document my learnings which gives me an opportunity to stay in a continuous hand-on mode and also provides an opportunity to share and discuss things in a wider forum.
+
+This blog is my learning journal — a space where I document concepts, insights, and experiments to help myself and anyone on a similar journey to grow.
 
 Thanks for visiting!
