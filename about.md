@@ -4,7 +4,7 @@ title: "About Me"
 permalink: /about/
 ---
 
-Hey Fello Knowledge Seeker,
+Hey Fellow Knowledge Seeker,
 
 This website is the culmination of a long-term wish to build a community where knowledge sharing is free and constructive. A bit of a background on how it started:
 
