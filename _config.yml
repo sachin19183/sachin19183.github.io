@@ -29,10 +29,9 @@ breadcrumbs: true
 minimal_mistakes_skin: "contrast"
 
 author:
-  name: "Sachin Sharma"
+  name: "Silent Warrior"
   avatar: "/assets/images/silentWarrorDP.png"
   bio: "A knowledge seeker fighting the lazy mind to learn and build something new every day."
-  location: "India"
   links:
     - label: "Codeberg repo"
       icon: "fab fa-git-alt"
@@ -43,3 +42,6 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/in/sachin-sharma-b36b596"
+    - label: "X.com"
+      icon: "fab fa-X"
+      url: "https://x.com/swsilentwarrior"
