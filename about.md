@@ -4,9 +4,9 @@ title: "About Me"
 permalink: /about/
 ---
 
-Hi, I'm Sachin.
+Hey Fello Knowledge Seeker,
 
-This website is the culmination of a long-term wish to build a community where knowledge sharing is free and constructive.
+This website is the culmination of a long-term wish to build a community where knowledge sharing is free and constructive. A bit of a background on how it started:
 
 In 2021, I started my second innings of upskilling myself and utilizing my personal time more effectively. Having been a C developer for most of my career, Go felt like the next natural step, and I picked it up. Around the same time, the wave of machine learning drew me toward Python. This eventually led me to explore how to design and build applications in a cloud-native environment.
 
