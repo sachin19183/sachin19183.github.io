@@ -4,7 +4,7 @@ title: System Design & Engineering Notes
 permalink: /SYSTEM/
 ---
 
-# ⚙️ System — Knowledge Index
+# ⚙️ System 
 
 This section captures how I design, structure, and build systems — including this website itself.
 
