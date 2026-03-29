@@ -40,7 +40,7 @@ I did research on how to build a website. Few things that came up was to write a
 
 So I did:
 
-```id="8mgjka"
+```id
 _posts/
   2025-12-05-Docker-Intro.md
   2025-12-07-Docker-notes.md
@@ -48,7 +48,7 @@ _posts/
 
 And inside each post:
 
-```yaml id="p3ht1z"
+```yaml
 categories: [DOCKER]
 ```
 
@@ -72,7 +72,7 @@ I didn’t just want posts.I wanted structure:
 
 So I created a `categories.md` and added links like:
 
-```markdown id="46vp0x"
+```markdown
 [Open DOCKER Index](/DOCKER/)
 ```
 
@@ -92,13 +92,13 @@ Jekyll maps URLs directly to files.
 
 So this:
 
-```id="ggsw9g"
+```id
 /DOCKER/
 ```
 
 Only works if this exists:
 
-```id="3bmt0i"
+```
 DOCKER/index.md
 ```
 
@@ -110,7 +110,7 @@ That was my first structural shift.
 
 So I created:
 
-```id="a301px"
+```
 DOCKER/
   index.md
 ```
@@ -136,7 +136,7 @@ It didn’t.
 
 That’s when I added this:
 
-```liquid id="vsqnjx"
+```liquid
 {% assign posts = site.categories.DOCKER | sort: "date" %}
 ```
 
@@ -154,7 +154,7 @@ But this raised a deeper question:
 
 At this point, I tried organizing posts like this:
 
-```id="te85t6"
+```
 _posts/docker/
   2025-12-05-Docker-Intro.md
 ```
@@ -171,7 +171,7 @@ That’s when I understood:
 
 This line is what actually matters:
 
-```yaml id="4q4yap"
+```yaml
 categories: [DOCKER]
 ```
 
@@ -190,26 +190,26 @@ I ended up with a **3-layer system**:
 
 ### 1. Physical Organization (for me)
 
-```id="4fyz5b"
+```
 _posts/docker/
 _posts/gcp/
 ```
 
 ### 2. Logical Categorization (for Jekyll)
 
-```yaml id="8ql2u1"
+```yaml
 categories: [DOCKER]
 ```
 
 ### 3. Custom Rendering (for the site)
 
-```liquid id="1hrn68"
+```liquid
 site.categories.DOCKER
 ```
 
 And category pages like:
 
-```id="h6bfsg"
+```
 DOCKER/index.md
 ```
 
@@ -235,20 +235,20 @@ Inside `_config.yml`, I added:
 
 * Site identity:
 
-```yaml id="qdp4cc"
+```yaml
 title: "Silent Warrior Tech Notes"
 name: "Sachin"
 ```
 
 * Domain:
 
-```yaml id="1q48ng"
+```yaml
 url: "https://thesilentwarrior.org"
 ```
 
 * Theme:
 
-```yaml id="wt4y6p"
+```yaml
 remote_theme: "mmistakes/minimal-mistakes"
 ```
 
@@ -256,13 +256,13 @@ Then the personal touches:
 
 ### Avatar
 
-```yaml id="zawh7z"
+```yaml
 avatar: "/assets/images/silentWarriorDP.png"
 ```
 
 ### Bio
 
-```yaml id="0l622z"
+```yaml
 bio: "A knowledge seeker fighting the lazy mind..."
 ```
 
@@ -282,7 +282,7 @@ I didn’t want a generic homepage.
 
 So I added:
 
-```id="h05s3t"
+```
 _layouts/home.html
 ```
 
