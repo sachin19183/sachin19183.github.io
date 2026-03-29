@@ -6,7 +6,6 @@ categories: [SYSTEM]
 tags: [jekyll, github-pages, architecture, learning]
 ---
 
-# How I Built *thesilentwarrior.org* — A Journey From “Just Notes” to a Structured System
 
 Before I get into the technical journey, I want to acknowledge something important.
 
@@ -22,19 +21,15 @@ This blog is as much about that process as it is about the final system.
 
 ---
 
-I didn’t design *thesilentwarrior.org*.
+I strongly beleive in sharing knowledge, have constructive discussions and improve yourself further in the process. What started as a simple idea—*“let me put my notes online and share it with other like minded folks”*—slowly turned into a system. Not because I planned it that way, but because things kept **not working the way I expected**.
 
-I arrived at it.
-
-What started as a simple idea—*“let me put my notes online”*—slowly turned into a system. Not because I planned it that way, but because things kept **not working the way I expected**.
-
-And each time something broke, I had to understand *why*.
+And each time something broke, I had to understand *the why part*.
 
 ---
 
 ## Phase 1: “Just Put Everything in `_posts/`”
 
-My first instinct was simple:
+I did research on how to build a website. Few things that came up was to write articles in medium or other similar sites. But i had an instinct to make the real me reflect in my articles and not just some polished articles which looks nice professioanlly. So i came to another method to build my website using github pages. So i discussed it with Chatgpt, what is the simplest way i can build a basic website using github pages. And the answer was using the inbuilt Jekyll with minimal mistakes theme. My first instinct was simple:
 
 > Jekyll has a `_posts/` folder → so I’ll put everything there.
 
@@ -58,15 +53,13 @@ This worked… partially.
 * Pages rendered
 * Everything looked fine
 
-Until I tried to organize it.
+As i kept on adding post on different topics at random which included gcp, ml, llm etc, i noticed that there was no proper way of navigating through the posts as it was a sequence sorted via dates mentioned in the filename and not the topics. So, I tried to organize it.
 
 ---
 
-## Phase 2: “I Want a Docker Page”
+## Phase 2: “I Want a Category wise Page”
 
-I didn’t just want posts.
-
-I wanted structure:
+I didn’t just want posts.I wanted structure:
 
 * A **Docker page**
 * A **GCP page**
