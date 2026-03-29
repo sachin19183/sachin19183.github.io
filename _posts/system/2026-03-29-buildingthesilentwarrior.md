@@ -304,11 +304,13 @@ And inside it:
 
 * It uses layout: archive
 * Pulls content dynamically:
+  
 ```liquid
 {% raw %}
 {% assign posts = site.posts | slice: 0, 3 %}
 {% endraw %}
 ```
+
 Renders recent posts manually
 
 3. **_config.yml Is the Glue**
