@@ -8,9 +8,7 @@ tags: [jekyll, github-pages, architecture, learning]
 
 
 Before I get into the technical journey, I want to acknowledge something
-important.
-
-I started this with **zero experience in building a website**.
+important.I started this with **zero experience in building a website**.
 
 This entire project was built with the help of ChatGPT---through long,
 back-and-forth conversations, trial and error, debugging sessions, and a
