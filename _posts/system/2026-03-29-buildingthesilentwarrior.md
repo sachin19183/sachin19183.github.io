@@ -152,7 +152,7 @@ It didn't.
 
 That's when I added this:
 
-``` liquid
+``` bash
 {% assign posts = site.categories.DOCKER | sort: "date" %}
 ```
 
