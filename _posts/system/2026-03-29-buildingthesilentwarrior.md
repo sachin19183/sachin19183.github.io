@@ -152,7 +152,11 @@ It didn't.
 
 That's when I added this:
 
-{% assign posts = site.categories.DOCKER | sort: "date" %}
+```liquid
+{% raw %}
+{% assign posts = site.categories.docker | sort: "date" %}
+{% endraw %}
+```
 
 And looped through posts.
 
