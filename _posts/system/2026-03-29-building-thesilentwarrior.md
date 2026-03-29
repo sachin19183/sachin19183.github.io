@@ -21,7 +21,7 @@ This blog is as much about that process as it is about the final system.
 
 ---
 
-I strongly beleive in sharing knowledge, have constructive discussions and improve yourself further in the process. What started as a simple idea—*“let me put my notes online and share it with other like minded folks”*—slowly turned into a system. Not because I planned it that way, but because things kept **not working the way I expected**.
+I strongly beleive in sharing knowledge, having constructive discussions, and improving yourself through that process. What started as a simple idea—*“let me put my notes online and share it with other like minded folks”*—slowly turned into a system. Not because I planned it that way, but because things kept **not working the way I expected**.
 
 And each time something broke, I had to understand *the why part*.
 
@@ -29,7 +29,12 @@ And each time something broke, I had to understand *the why part*.
 
 ## Phase 1: “Just Put Everything in `_posts/`”
 
-I did research on how to build a website. Few things that came up was to write articles in medium or other similar sites. But i had an instinct to make the real me reflect in my articles and not just some polished articles which looks nice professioanlly. So i came to another method to build my website using github pages. So i discussed it with Chatgpt, what is the simplest way i can build a basic website using github pages. And the answer was using the inbuilt Jekyll with minimal mistakes theme. My first instinct was simple:
+I did research on how to build a website. Few things that came up was to write articles in medium or other similar sites. But this didnt appealed to me as these would be isolated arcticles and miss the structure i desired. So i came to another method to build my website using github pages. So i discussed it with Chatgpt:
+
+> what is the simplest way i can build a basic website using github pages.
+
+ And the answer was-  use the inbuilt **Jekyll with Minimal Mistakes** theme. 
+ My first instinct was simple:
 
 > Jekyll has a `_posts/` folder → so I’ll put everything there.
 
@@ -53,7 +58,7 @@ This worked… partially.
 * Pages rendered
 * Everything looked fine
 
-As i kept on adding post on different topics at random which included gcp, ml, llm etc, i noticed that there was no proper way of navigating through the posts as it was a sequence sorted via dates mentioned in the filename and not the topics. So, I tried to organize it.
+As i kept on adding post on different topics at random which included gcp, ml, llm etc, i noticed that there was no proper way of navigating through the posts as it was a sequence sorted via dates mentioned in the filename and not the topics. I needed the structure around topics not dates.
 
 ---
 
@@ -334,6 +339,12 @@ Over and over again.
 And somewhere along that process, this became more than a website.
 
 It became a system that actually reflects how I learn.
+
+As you browse through the articles, I want to be transparent about one thing: I have taken help from AI primarily to review grammar and occasionally sanity-check technical accuracy.
+
+None of the articles are copy-pasted from AI.
+
+My purpose here is to learn along the way—not to publish a narrative that I don’t truly understand or own.
 
 ---
 
