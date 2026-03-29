@@ -7,40 +7,54 @@ tags: [jekyll, github-pages, architecture, learning]
 ---
 
 
-Before I get into the technical journey, I want to acknowledge something important.
+Before I get into the technical journey, I want to acknowledge something
+important.
 
 I started this with **zero experience in building a website**.
 
-This entire project was built with the help of ChatGPT—through long, back-and-forth conversations, trial and error, debugging sessions, and a lot of questions. What you’re reading here is not something I built in isolation.
+This entire project was built with the help of ChatGPT---through long,
+back-and-forth conversations, trial and error, debugging sessions, and a
+lot of questions. What you're reading here is not something I built in
+isolation.
 
 It was a collaborative process:
 
-> I explored, experimented, and broke things—and ChatGPT helped me reason through them until things made sense.
+> I explored, experimented, and broke things---and ChatGPT helped me
+> reason through them until things made sense.
 
 This blog is as much about that process as it is about the final system.
 
----
+------------------------------------------------------------------------
 
-I strongly beleive in sharing knowledge, having constructive discussions, and improving yourself through that process. What started as a simple idea—*“let me put my notes online and share it with other like minded folks”*—slowly turned into a system. Not because I planned it that way, but because things kept **not working the way I expected**.
+I strongly beleive in sharing knowledge, having constructive
+discussions, and improving yourself through that process. What started
+as a simple idea---*"let me put my notes online and share it with other
+like minded folks"*---slowly turned into a system. Not because I planned
+it that way, but because things kept **not working the way I expected**.
 
 And each time something broke, I had to understand *the why part*.
 
----
+------------------------------------------------------------------------
 
-## Phase 1: “Just Put Everything in `_posts/`”
+## Phase 1: "Just Put Everything in `_posts/`"
 
-I did research on how to build a website. Few things that came up was to write articles in medium or other similar sites. But this didnt appealed to me as these would be isolated arcticles and miss the structure i desired. So i came to another method to build my website using github pages. So i discussed it with Chatgpt:
+I did research on how to build a website. Few things that came up was to
+write articles in medium or other similar sites. But this didnt appealed
+to me as these would be isolated arcticles and miss the structure i
+desired. So i came to another method to build my website using github
+pages. So i discussed it with Chatgpt:
 
-> what is the simplest way i can build a basic website using github pages.
+> what is the simplest way i can build a basic website using github
+> pages.
 
- And the answer was-  use the inbuilt **Jekyll with Minimal Mistakes** theme. 
- My first instinct was simple:
+And the answer was- use the inbuilt **Jekyll with Minimal Mistakes**
+theme. My first instinct was simple:
 
-> Jekyll has a `_posts/` folder → so I’ll put everything there.
+> Jekyll has a `_posts/` folder → so I'll put everything there.
 
 So I did:
 
-```id
+``` bash
 _posts/
   2025-12-05-Docker-Intro.md
   2025-12-07-Docker-notes.md
@@ -48,31 +62,35 @@ _posts/
 
 And inside each post:
 
-```yaml
+``` yaml
 categories: [DOCKER]
 ```
 
-This worked… partially.
+This worked... partially.
 
-* Posts showed up
-* Pages rendered
-* Everything looked fine
+-   Posts showed up
+-   Pages rendered
+-   Everything looked fine
 
-As i kept on adding post on different topics at random which included gcp, ml, llm etc, i noticed that there was no proper way of navigating through the posts as it was a sequence sorted via dates mentioned in the filename and not the topics. I needed the structure around topics not dates.
+As i kept on adding post on different topics at random which included
+gcp, ml, llm etc, i noticed that there was no proper way of navigating
+through the posts as it was a sequence sorted via dates mentioned in the
+filename and not the topics. I needed the structure around topics not
+dates.
 
----
+------------------------------------------------------------------------
 
-## Phase 2: “I Want a Category wise Page”
+## Phase 2: "I Want a Category wise Page"
 
-I didn’t just want posts.I wanted structure:
+I didn't just want posts.I wanted structure:
 
-* A **Docker page**
-* A **GCP page**
-* A **ML page**
+-   A **Docker page**
+-   A **GCP page**
+-   A **ML page**
 
 So I created a `categories.md` and added links like:
 
-```markdown
+``` markdown
 [Open DOCKER Index](/DOCKER/)
 ```
 
@@ -80,63 +98,63 @@ This is where things broke.
 
 ➡️ Clicking the link → **404**
 
----
+------------------------------------------------------------------------
 
-## Phase 3: The First Realization — URLs Are Not Abstract
+## Phase 3: The First Realization --- URLs Are Not Abstract
 
 I assumed `/DOCKER/` was just a label.
 
-It isn’t.
+It isn't.
 
 Jekyll maps URLs directly to files.
 
 So this:
 
-```id
+``` text
 /DOCKER/
 ```
 
 Only works if this exists:
 
-```
+``` text
 DOCKER/index.md
 ```
 
 That was my first structural shift.
 
----
+------------------------------------------------------------------------
 
 ## Phase 4: Creating Category Pages (First Fix)
 
 So I created:
 
-```
+``` bash
 DOCKER/
   index.md
 ```
 
 And suddenly:
 
-* `/DOCKER/` worked
-* Navigation worked
+-   `/DOCKER/` worked
+-   Navigation worked
 
 Problem solved?
 
 Not really.
 
----
+------------------------------------------------------------------------
 
-## Phase 5: “Why Is My Docker Page Empty?”
+## Phase 5: "Why Is My Docker Page Empty?"
 
-Now I had a working page… with no content.
+Now I had a working page... with no content.
 
 I expected Jekyll to automatically show Docker posts there.
 
-It didn’t.
+It didn't.
 
-That’s when I added this:
+That's when I added this:
 
-```liquid
+``` liquid
 {% assign posts = site.categories.DOCKER | sort: "date" %}
 ```
 
@@ -148,39 +166,39 @@ But this raised a deeper question:
 
 > Where is `site.categories.DOCKER` even coming from?
 
----
+------------------------------------------------------------------------
 
-## Phase 6: The Second Realization — Categories Are Not Folder-Based
+## Phase 6: The Second Realization --- Categories Are Not Folder-Based
 
 At this point, I tried organizing posts like this:
 
-```
+``` bash
 _posts/docker/
   2025-12-05-Docker-Intro.md
 ```
 
 Logically, that should define the category.
 
-But it didn’t.
+But it didn't.
 
 The page was still empty.
 
-That’s when I understood:
+That's when I understood:
 
 > Jekyll does **not** infer categories from folder structure.
 
 This line is what actually matters:
 
-```yaml
+``` yaml
 categories: [DOCKER]
 ```
 
 Without it:
 
-* Your posts exist
-* But your category page sees nothing
+-   Your posts exist
+-   But your category page sees nothing
 
----
+------------------------------------------------------------------------
 
 ## Phase 7: The System Finally Emerges
 
@@ -190,65 +208,67 @@ I ended up with a **3-layer system**:
 
 ### 1. Physical Organization (for me)
 
-```
+``` bash
 _posts/docker/
 _posts/gcp/
 ```
 
 ### 2. Logical Categorization (for Jekyll)
 
-```yaml
+``` yaml
 categories: [DOCKER]
 ```
 
 ### 3. Custom Rendering (for the site)
 
-```liquid
+``` liquid
 site.categories.DOCKER
 ```
 
 And category pages like:
 
-```
+``` text
 DOCKER/index.md
 ```
 
----
+------------------------------------------------------------------------
 
 ## 🧠 Visualizing the Architecture
 
-At this point, I needed a mental model to understand what I had actually built.
+At this point, I needed a mental model to understand what I had actually
+built.
 
 So I represented it like this:
 
 ![Silent Warrior Architecture](/images/silent-warrior-architecture.png)
 
-> A 3-layer system: physical folders → frontmatter categories → custom rendered pages.
+> A 3-layer system: physical folders → frontmatter categories → custom
+> rendered pages.
 
----
+------------------------------------------------------------------------
 
-## Phase 8: Making the Site Feel Like “Mine”
+## Phase 8: Making the Site Feel Like "Mine"
 
 Once the structure stabilized, I moved to customization.
 
 Inside `_config.yml`, I added:
 
-* Site identity:
+### Site identity
 
-```yaml
+``` yaml
 title: "Silent Warrior Tech Notes"
 name: "Sachin"
 ```
 
-* Domain:
+### Domain
 
-```yaml
+``` yaml
 url: "https://thesilentwarrior.org"
 ```
 
-* Theme:
+### Theme
 
-```yaml
+``` yaml
 remote_theme: "mmistakes/minimal-mistakes"
 ```
 
@@ -256,83 +276,83 @@ Then the personal touches:
 
 ### Avatar
 
-```yaml
+``` yaml
 avatar: "/assets/images/silentWarriorDP.png"
 ```
 
 ### Bio
 
-```yaml
+``` yaml
 bio: "A knowledge seeker fighting the lazy mind..."
 ```
 
 ### Social Links
 
-* LinkedIn
-* X (Twitter)
-* Codeberg
+-   LinkedIn
+-   X (Twitter)
+-   Codeberg
 
-This was the moment it stopped being “a site” and became **my site**.
+This was the moment it stopped being "a site" and became **my site**.
 
----
+------------------------------------------------------------------------
 
 ## Phase 9: Homepage Control
 
-I didn’t want a generic homepage.
+I didn't want a generic homepage.
 
 So I added:
 
-```
+``` text
 _layouts/home.html
 ```
 
 And controlled:
 
-* how posts are selected
-* how many are shown
-* how they are rendered
+-   how posts are selected
+-   how many are shown
+-   how they are rendered
 
-Now the site wasn’t just static content.
+Now the site wasn't just static content.
 
 It had **logic**.
 
----
+------------------------------------------------------------------------
 
 ## What This Journey Actually Taught Me
 
 ### 1. Structure Comes Before Features
 
-### 2. Jekyll Is Simple—but Not Obvious
+### 2. Jekyll Is Simple---but Not Obvious
 
 ### 3. Organization Has Layers
 
 ### 4. Most Problems Are Silent
 
----
+------------------------------------------------------------------------
 
 ## What *thesilentwarrior.org* Is Now
 
-It’s not just a blog.
+It's not just a blog.
 
-It’s a **structured knowledge system**:
+It's a **structured knowledge system**:
 
-* Docker → organized notes
-* GCP → categorized learnings
-* ML / LLM → evolving topics
-* SYSTEM → how everything is built
+-   Docker → organized notes
+-   GCP → categorized learnings
+-   ML / LLM → evolving topics
+-   SYSTEM → how everything is built
 
----
+------------------------------------------------------------------------
 
 ## Final Thought
 
-I didn’t build this in one go.
+I didn't build this in one go.
 
 I built it by:
 
-* trying something
-* seeing it fail
-* understanding why
-* fixing the structure
+-   trying something
+-   seeing it fail
+-   understanding why
+-   fixing the structure
 
 Over and over again.
 
@@ -340,12 +360,17 @@ And somewhere along that process, this became more than a website.
 
 It became a system that actually reflects how I learn.
 
-As you browse through the articles, I want to be transparent about one thing: I have taken help from AI primarily to review grammar and occasionally sanity-check technical accuracy.
+As you browse through the articles, I want to be transparent about one
+thing: I have taken help from AI primarily to review grammar and
+occasionally sanity-check technical accuracy.
 
 None of the articles are copy-pasted from AI.
 
-My purpose here is to learn along the way—not to publish a narrative that I don’t truly understand or own.
+My purpose here is to learn along the way---not to publish a narrative
+that I don't truly understand or own.
 
----
+------------------------------------------------------------------------
 
+> If something doesn't work in Jekyll, it's usually not broken---you
+> just haven't matched the structure yet.
 > If something doesn’t work in Jekyll, it’s usually not broken—you just haven’t matched the structure yet.
