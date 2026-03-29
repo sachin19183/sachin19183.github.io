@@ -193,7 +193,7 @@ This line is what actually matters:
 categories: [DOCKER]
 ```
 
-Without it:
+Without it in the post file:
 
 -   Your posts exist
 -   But your category page sees nothing
@@ -244,6 +244,111 @@ So I represented it like this:
 
 > A 3-layer system: physical folders → frontmatter categories → custom
 > rendered pages.
+
+------------------------------------------------------------------------
+
+## What my repository actually looks like now
+
+![Silent Warrior Repo Structure](/images/repoStructure.JPG)
+
+Each category:
+
+*has its own folder
+*has its own index.md
+*behaves like a mini knowledge hub
+
+Please note that this way is a manual process as if you need a new category, you need to add a new folder in your root (all caps). then add index.md inside it. then within _posts you create another folder with the same name (all small letters) and then within that folder you add your posts in the usaul format.
+categories.md acts as the entry point.
+
+**Why This Was Confusing**
+
+Because nothing explicitly tells you this.You assume:
+
+*Markdown links → should just work
+*Paths → should resolve automatically
+
+But Jekyll works differently:
+
+URLs map to files and folders
+Not just strings in your markdown
+
+That mismatch between expectation and reality is where the confusion came from.
+
+------------------------------------------------------------------------
+
+## Other Pieces That Fell Into Place
+
+Along the way, a few other important things became clearer:
+
+1. **_posts/ Is Different**
+
+Posts live in _posts/ with date-based filenames:
+
+2025-12-05-Docker-Intro.md
+They support blog-style content and are automatically listed
+
+That’s a completely different system from your category pages.
+
+2. **_layouts/ Controls Rendering**
+
+Your layouts (like home.html) define how everything looks.
+
+So even if content exists, without the right layout:
+→ it won’t appear the way you expect
+
+I didn’t just rely on the theme.I added a custom layout:
+
+_layouts/home.html
+
+And inside it:
+
+*It uses layout: archive
+*Pulls content dynamically:
+```liquid
+{% raw %}
+{% assign posts = site.posts | slice: 0, 3 %}
+{% endraw %}
+```
+Renders recent posts manually
+
+3. **_config.yml Is the Glue**
+
+This file quietly controls:
+
+* **Theme:**
+remote_theme: "mmistakes/minimal-mistakes"
+* **Site URL:**
+url: "https://thesilentwarrior.org"
+baseurl: ""
+* **Plugins:**
+- jekyll-include-cache
+- jekyll-sitemap
+* **Analytics + verification:**
+google:
+  tracking_id: "G-..."
+
+You don’t notice it—until something breaks.
+
+------------------------------------------------------------------------
+
+## The Domain Moment
+
+Adding the CNAME file was another small but important step.
+
+CNAME → thesilentwarrior.org
+
+Again, simple in theory.
+
+But only works when:
+
+*DNS is correct
+*GitHub Pages picks it up
+*HTTPS is enforced
+*_config.yml had the right URL
+
+It’s another example of:
+
+Small file. Big impact.
 
 ------------------------------------------------------------------------
 
