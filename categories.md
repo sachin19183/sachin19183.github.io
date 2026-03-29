@@ -12,6 +12,13 @@ You can browse my notes and learnings by domain.
 
 ---
 
+## ⚙️ System
+
+Architecture, design decisions, and engineering learnings from building real systems.
+
+👉 [Open SYSTEM Index](/SYSTEM/)
+
+
 ## 🐳 Docker
 
 Architecture, networking, containers.
