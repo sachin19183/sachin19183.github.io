@@ -253,9 +253,9 @@ So I represented it like this:
 
 Each category:
 
-*has its own folder
-*has its own index.md
-*behaves like a mini knowledge hub
+* has its own folder
+* has its own index.md
+* behaves like a mini knowledge hub
 
 Please note that this way is a manual process as if you need a new category, you need to add a new folder in your root (all caps). then add index.md inside it. then within _posts you create another folder with the same name (all small letters) and then within that folder you add your posts in the usaul format.
 categories.md acts as the entry point.
@@ -264,13 +264,13 @@ categories.md acts as the entry point.
 
 Because nothing explicitly tells you this.You assume:
 
-*Markdown links → should just work
-*Paths → should resolve automatically
+* Markdown links → should just work
+* Paths → should resolve automatically
 
 But Jekyll works differently:
 
-URLs map to files and folders
-Not just strings in your markdown
+* URLs map to files and folders
+* Not just strings in your markdown
 
 That mismatch between expectation and reality is where the confusion came from.
 
@@ -302,8 +302,8 @@ _layouts/home.html
 
 And inside it:
 
-*It uses layout: archive
-*Pulls content dynamically:
+* It uses layout: archive
+* Pulls content dynamically:
 ```liquid
 {% raw %}
 {% assign posts = site.posts | slice: 0, 3 %}
@@ -341,10 +341,10 @@ Again, simple in theory.
 
 But only works when:
 
-*DNS is correct
-*GitHub Pages picks it up
-*HTTPS is enforced
-*_config.yml had the right URL
+* DNS is correct
+* GitHub Pages picks it up
+* HTTPS is enforced
+* _config.yml had the right URL
 
 It’s another example of:
 
