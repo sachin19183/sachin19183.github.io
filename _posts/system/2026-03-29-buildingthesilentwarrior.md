@@ -463,12 +463,8 @@ I built it by:
 
 Over and over again in span of not days but months and somewhere along that process, this became more than a website. It became a system that actually reflects how I learn.
 
-As you browse through the articles, I want to be transparent about one thing: I have taken help from AI primarily to review grammar and occasionally sanity-check technical accuracy. I also learned the markdown syntax from AI andtake help for formatting from time to time.
+As you browse through the articles, I want to be transparent about one thing: I have taken help from AI primarily to review grammar and occasionally sanity-check technical accuracy. I also learned the markdown syntax from AI and take help for formatting from time to time.
 
 None of the articles are copy-pasted from AI. My purpose here is to learn along the way---not to publish a narrative that I don't truly understand or own.
 
 ------------------------------------------------------------------------
-
-> If something doesn't work in Jekyll, it's usually not broken---you
-> just haven't matched the structure yet.
-> 
