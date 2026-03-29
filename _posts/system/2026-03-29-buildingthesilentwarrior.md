@@ -152,9 +152,7 @@ It didn't.
 
 That's when I added this:
 
-``` bash
 {% assign posts = site.categories.DOCKER | sort: "date" %}
-```
 
 And looped through posts.
 
@@ -324,7 +322,7 @@ It had **logic**.
 
 ### 3. Organization Has Layers
 
-### 4. Most Problems Are Silent
+### 4. Most Problems Are Silent/Hidden in Plain Sight
 
 ------------------------------------------------------------------------
 
@@ -371,4 +369,4 @@ that I don't truly understand or own.
 
 > If something doesn't work in Jekyll, it's usually not broken---you
 > just haven't matched the structure yet.
-> If something doesn’t work in Jekyll, it’s usually not broken—you just haven’t matched the structure yet.
+> 
