@@ -1,6 +1,5 @@
 ---
-layout: single
-title: LLM Text Processing Glossary
+title: "LLM Dictionary"
 date: 2025-12-04
 categories: [llm]
 tags: [llm dictionary, prompt, tokenization, context window]
