@@ -1,12 +1,6 @@
 ---
-layout: home
-title: "Silent Warrior Tech Notes"
-author_profile: true
----
-
----
-layout: home
-title: "Silent Warrior Tech Notes"
+layout: archive
+title: "Tech Blogs from a Silent Warrior "
 author_profile: true
 ---
 
