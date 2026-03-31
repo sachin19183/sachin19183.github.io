@@ -61,17 +61,16 @@ layout: default
         {% include page__date.html locale=locale %}
       </footer>
       
-      <div class="page__cta-share" style="margin-top: 1.8em;">
-
+      <div class="page__cta-share" style="margin-top: 1.0em;">
         {% if page.share %}
-          <div style="margin-top: 0.4em;">
-            {% include after-post.html %}
+          {% include after-post.html %}
+          <div style="margin-top: 1.5em;">
             {% include social-share.html %}
           </div>
         {% endif %}
-      
       </div>
-      {% include post_pagination.html locale=locale %}
+      
+    {% include post_pagination.html locale=locale %}
     
 
     {% if site.comments.provider and page.comments %}
