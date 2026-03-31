@@ -52,7 +52,7 @@ layout: default
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
-      {% include after-post.html %}
+      
       <footer class="page__meta">
         {% if site.data.ui-text[locale].meta_label %}
           <h4 class="page__meta-title">{{ site.data.ui-text[locale].meta_label }}</h4>
@@ -60,8 +60,16 @@ layout: default
         {% include page__taxonomy.html locale=locale %}
         {% include page__date.html locale=locale %}
       </footer>
+      <div class="page__cta-share" style="margin-top: 2em;">
+
+        {% include after-post.html %}
+
+        {% if page.share %}
+          {% include social-share.html %}
+        {% endif %}
+
+      </div>
       
-      {% if page.share %}{% include social-share.html locale=locale %}{% endif %}
 
       {% include post_pagination.html locale=locale %}
     </div>
