@@ -3,7 +3,7 @@ title: "GCP commands List"
 date: 2026-03-07
 categories: [gcp]
 tags: [gcloud, gsutil, pubsub, docker, commands]
-excerpt: "List of commands used within GCP for various operations 
+excerpt: "List of commands used within GCP for various operations" 
 ---
 
 This post list down GCP commands and some docker commands which can be handy during your hands-on and daily work via command line.
