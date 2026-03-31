@@ -1,9 +1,10 @@
 ---
-layout: single
 title: Docker handson- The ops perspective
 date: 2026-02-28
-categories: [DOCKER]
-tags: [Fundamentals]
+categories: [docker]
+tags: [containers, linux, namespaces, cgroups]
+excerpt: "Docker handson commands used in day to day work arranged in a logical sequence"
+---
 ---
 
 1. Check docker version
