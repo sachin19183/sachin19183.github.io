@@ -6,13 +6,7 @@ permalink: /about/
 
 Hey Fellow Knowledge Seeker,
 
-This website is the culmination of a long-term wish to build a community where knowledge sharing is free and constructive. A bit of a background on how it started:
-
-In 2021, I started my second innings of upskilling myself and utilizing my personal time more effectively. Having been a C developer for most of my career, Go felt like the next natural step, and I picked it up. Around the same time, the wave of machine learning drew me toward Python. This eventually led me to explore how to design and build applications in a cloud-native environment.
-
-I have struggled at times, mostly due to a lack of discipline, which pushed me into a cycle of learning, forgetting, and relearning. To break out of that cycle, I decided to document my learnings. This helps me stay in a continuous hands-on mode while also creating an opportunity to share and discuss ideas with a wider community.
-
-This blog is my learning journal — a space where I document concepts, insights, and experiments to help myself and anyone on a similar journey grow.
+This website is the culmination of a long-term wish to build a community where knowledge sharing is free and constructive. I’m a telecom professional with over 20 years of experience, continuously learning and adapting to evolving technologies. As a millennial, I’ve witnessed rapid shifts in the tech landscape—often too many to fully master. This space is my attempt to help fellow learning enthusiasts by providing a free and open-source platform of hands-on technical notes and insights. This also motivates me to stay in a continuous hands-on mode while also creating an opportunity to share and discuss ideas with a wider community.
 
 Thanks for visiting!
 
