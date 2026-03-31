@@ -13,7 +13,7 @@ This section documents my learnings on containerization, Docker architecture, im
 ## 📚 Posts
 
 <ul>
-{% assign posts = site.categories.DOCKER | sort: "date" %}
+{% assign posts = site.categories.docker | sort: "date" %}
 {% for post in posts %}
   <li>
     <a href="{{ post.url }}">
