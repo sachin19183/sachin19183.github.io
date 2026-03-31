@@ -4,7 +4,7 @@ title: GCP Knowledge Index
 permalink: /GCP/
 ---
 
-# ☁️ Google Cloud Platform — Knowledge Index
+# ☁️ Google Cloud Platform — Blog Index
 
 This section contains my architecture notes, hands-on labs, and certification learnings on Google Cloud Platform.
 
