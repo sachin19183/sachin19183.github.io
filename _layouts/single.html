@@ -60,7 +60,8 @@ layout: default
         {% include page__taxonomy.html locale=locale %}
         {% include page__date.html locale=locale %}
       </footer>
-      <div class="page__cta-share" style="margin-top: 1.5em;">
+      <hr style="margin: 2em 0; border: none; border-top: 1px solid #e5e5e5;">
+      <div class="page__cta-share" style="margin-top: 0;">
 
         {% include after-post.html %}
 
@@ -70,9 +71,9 @@ layout: default
           </div>
         {% endif %}
       
-
+      </div>
       {% include post_pagination.html locale=locale %}
-    </div>
+    
 
     {% if site.comments.provider and page.comments %}
       {% if jekyll.environment == 'production' %}
