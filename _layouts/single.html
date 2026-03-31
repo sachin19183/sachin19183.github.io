@@ -63,10 +63,9 @@ layout: default
       
       <div class="page__cta-share" style="margin-top: 1.8em;">
 
-        {% include after-post.html %}
-
         {% if page.share %}
           <div style="margin-top: 0.4em;">
+            {% include after-post.html %}
             {% include social-share.html %}
           </div>
         {% endif %}
