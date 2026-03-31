@@ -23,7 +23,28 @@ markdown: kramdown
 plugins:
   - jekyll-include-cache
   - jekyll-sitemap
+  - jekyll-feed
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      toc: true
 
+category_archive:
+  type: liquid
+  path: /categories/
+
+tag_archive:
+  type: liquid
+  path: /tags/
+  
 # Minimal Mistakes settings
 locale: "en-US"
 logo: "/assets/images/silentWarrorDP.png"
