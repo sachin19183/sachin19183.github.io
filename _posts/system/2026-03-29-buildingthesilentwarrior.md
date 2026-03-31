@@ -1,9 +1,9 @@
 ---
-layout: single
-title: How I Built thesilentwarrior.org — From Notes to a Structured System
+title: "How I Built thesilentwarrior.org — From Notes to a Structured System"
 date: 2026-03-29
-categories: [SYSTEM]
+categories: [system]
 tags: [jekyll, github-pages, architecture, learning]
+excerpt: "A journal which covers my journey to create my first ever website for free using chatgpt. This also documents the mistakes and leasons learnt for other beginners"
 ---
 
 
