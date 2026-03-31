@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: home
 title: "Tech Blogs from a Silent Warrior "
 author_profile: true
 ---
