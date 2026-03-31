@@ -1,8 +1,7 @@
 ---
-layout: single
 title: Introduction to Dockers
 date: 2025-12-05
-categories: [DOCKER]
+categories: [docker]
 tags: [Fundamentals]
 ---
 
