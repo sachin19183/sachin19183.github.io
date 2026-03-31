@@ -48,7 +48,7 @@ tag_archive:
 # Minimal Mistakes settings
 locale: "en-US"
 logo: "/assets/images/silentWarrorDP.png"
-
+link_color: "#2a7ae2"
 search: true
 search_full_content: true
 breadcrumbs: true
