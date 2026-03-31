@@ -11,9 +11,6 @@ main:
   - title: "genAI"
     url: /LLM/
 
-  - title: "System Design"
-    url: /SYSTEM/
-
   - title: "All Topics"
     url: /categories/
 
