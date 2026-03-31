@@ -1,8 +1,9 @@
 ---
-layout: single
-title: How to setup a golang client server project in GCP
+title: "How to setup a golang client server project in GCP"
 date: 2026-03-08
-categories: [GCP]
+categories: [gcp]
+tags: [golang, gcp, cloudbucket, server, client, networking]
+excerpt: "Handson guide to setup a basic client server program written in GOLANG in google cloud "
 ---
 This post document my hands-on experiment in deloying a tcp server client program in GCP.
 
