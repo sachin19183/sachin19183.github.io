@@ -60,15 +60,15 @@ layout: default
         {% include page__taxonomy.html locale=locale %}
         {% include page__date.html locale=locale %}
       </footer>
-      <div class="page__cta-share" style="margin-top: 2em;">
+      <div class="page__cta-share" style="margin-top: 1.5em;">
 
         {% include after-post.html %}
 
         {% if page.share %}
-          {% include social-share.html %}
+          <div style="margin-top: 0.8em;">
+            {% include social-share.html %}
+          </div>
         {% endif %}
-
-      </div>
       
 
       {% include post_pagination.html locale=locale %}
