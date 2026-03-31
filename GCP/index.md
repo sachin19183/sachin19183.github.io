@@ -13,7 +13,7 @@ This section contains my architecture notes, hands-on labs, and certification le
 ## 📚 Posts
 
 <ul>
-{% assign posts = site.categories.GCP | sort: "date" %}
+{% assign posts = site.categories.gcp | sort: "date" %}
 {% for post in posts %}
   <li>
     <a href="{{ post.url }}">
