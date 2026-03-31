@@ -4,7 +4,7 @@ title: LLM Knowledge Index
 permalink: /LLM/
 ---
 
-# 🤖 Large Language Models — Knowledge Index
+# 🤖 Large Language Models — Blog Index
 
 This section contains my learnings, experiments, and architecture notes on Large Language Models (LLMs), prompt engineering, and agentic AI systems.
 
