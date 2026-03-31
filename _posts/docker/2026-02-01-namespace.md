@@ -1,9 +1,9 @@
 ---
-layout: single
 title: Linux Namespace- The isolation engine
 date: 2026-02-01
-categories: [DOCKER]
-tags: [Fundamentals]
+categories: [docker]
+tags: [containers, linux, namespaces, cgroups]
+excerpt: "Deep dive into how containers work internally, including namespaces, cgroups, and filesystem isolation."
 ---
 
 > A process inside a namespace sees its own “version” of the system.
