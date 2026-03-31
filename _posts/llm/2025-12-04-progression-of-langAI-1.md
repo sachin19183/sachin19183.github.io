@@ -1,9 +1,9 @@
 ---
-layout: single
-title: History / Progression of Language AI Part-1
+title: "History and Progression of Language AI Part-1"
 date: 2025-12-04
-categories: [LLM]
+categories: [llm]
 tags: [Fundamentals]
+excerpt: "A journey into the history of how we progressed in large language models"
 ---
 
 ## Bag of Words
