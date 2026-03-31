@@ -2,8 +2,9 @@
 layout: single
 title: LLM Text Processing Glossary
 date: 2025-12-04
-categories: [LLM]
-tags: [Fundamentals]
+categories: [llm]
+tags: [llm dictionary, prompt, tokenization, context window]
+excerpt: "A beginner-friendly glossary of key terminology used in Large Language Models (LLMs) and natural language text processing"
 ---
 
 A beginner-friendly glossary of key terminology used in Large Language Models (LLMs) and natural language text processing.
