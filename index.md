@@ -4,10 +4,6 @@ title: ""
 author_profile: true
 ---
 
-Welcome to my technical knowledge hub — a collection of hands-on learnings across Go, Python, Cloud, AI, and Distributed Systems.
-
----
-
 ## Explore by Domain
 
 | Domain | Description | Explore |
@@ -32,8 +28,12 @@ Areas I am currently exploring and building:
 
 ---
 
-My way of working aligns with an individual contributor mindset — a Silent Warrior who prefers deep focus, minimal noise, and letting the work speak for itself. I occasionally write reflections on resilience, discipline, and inner growth for those navigating personal and professional crossroads.
+## The Silent Path
 
-➡️ [Silent Warrior Philosophy](https://sachin19183.github.io/path-of-the-silent-warrior/)
+My way of working aligns with an individual contributor mindset—a silent warrior who values deep focus, minimal noise, and letting the work speak for itself.
+
+I occasionally document my inner voice, grounded in my morals and values. These reflections are non-technical, offering my perspective on work, problem-solving, navigating tough situations, and sometimes exploring lighter themes.
+
+👉 [Explore The Path of the Silent Warrior](https://thesilentwarrior.org/path-of-the-silent-warrior/) 
 
 ---
