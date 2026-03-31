@@ -1,7 +1,6 @@
 ---
 layout: archive
 ---
-
 {%- assign locale = page.locale | default: layout.locale | default: site.locale %}
 
 <!-- ⚙️ Start Here -->
@@ -14,13 +13,9 @@ layout: archive
 </section>
 
 <!-- 🆕 Recent Posts -->
-<h2>🆕 Latest Learnings</h2>
+<h2>🧠 Latest Learnings</h2>
 
-{% if paginator %}
-  {% assign posts = paginator.posts | slice: 0, 3 %}
-{% else %}
-  {% assign posts = site.posts | slice: 0, 3 %}
-{% endif %}
+{% assign posts = site.posts | slice: 0, 3 %}
 
 <div class="entries-list">
   {% for post in posts %}
