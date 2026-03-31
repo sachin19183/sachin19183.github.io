@@ -4,7 +4,7 @@ title: Machine Learning Knowledge Index
 permalink: /ML/
 ---
 
-# 📊 Machine Learning — Knowledge Index
+# 📊 Machine Learning — Blog Index
 
 This section captures my notes on Machine Learning fundamentals, training workflows, model deployment, and applied ML systems.
 
@@ -13,7 +13,7 @@ This section captures my notes on Machine Learning fundamentals, training workfl
 ## 📚 Posts
 
 <ul>
-{% assign posts = site.categories.ML | sort: "date" %}
+{% assign posts = site.categories.ml | sort: "date" %}
 {% for post in posts %}
   <li>
     <a href="{{ post.url }}">
