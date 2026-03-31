@@ -1,0 +1,22 @@
+{% if page.share != false %}
+<div class="page__share">
+  <h4 class="page__share-title">Share</h4>
+
+  <!-- X (Twitter) -->
+  <a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url={{ page.url | absolute_url }}"
+     class="btn btn--twitter" target="_blank">X</a>
+
+  <!-- Facebook -->
+  <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}"
+     class="btn btn--facebook" target="_blank">Facebook</a>
+
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url }}"
+     class="btn btn--linkedin" target="_blank">LinkedIn</a>
+
+  <!-- ✅ 📱 WhatsApp -->
+  <a href="https://api.whatsapp.com/send?text={{ page.title | uri_escape }}%20{{ page.url | absolute_url }}"
+     class="btn btn--success" target="_blank">WhatsApp</a>
+
+</div>
+{% endif %}
