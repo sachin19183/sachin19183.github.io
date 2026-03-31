@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "Tech Blogs from a Silent Warrior "
+title: ""
 author_profile: true
 ---
 
@@ -17,7 +17,7 @@ Welcome to my technical knowledge hub — a collection of hands-on learnings acr
 | 🤖 LLM | Prompt engineering, RAG, agents, embeddings | [Open](/LLM/) |
 | 📊 ML | ML systems, pipelines, model deployment | [Open](/ML/) |
 
-👉 Start with a domain above or explore the latest learnings below.
+👉 Choose a domain to begin, or explore the latest learnings below.
 
 **Coming soon:** My experimental projects based on what I have learned so far  
 [Dojo of Silent Warrior](https://thesilentwarrior.org)
