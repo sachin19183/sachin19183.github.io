@@ -1,9 +1,21 @@
 main:
   - title: "Home"
     url: /
-  - title: "Topics"
+
+  - title: "Docker"
+    url: /DOCKER/
+
+  - title: "Cloud"
+    url: /GCP/
+
+  - title: "genAI"
+    url: /LLM/
+    
+  - title: "System Design"
+    url: /SYSTEM/
+
+  - title: "All Topics"
     url: /categories/
+
   - title: "About"
     url: /about/
-  - title: "System"
-    url: /SYSTEM/
