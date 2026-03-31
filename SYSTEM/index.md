@@ -15,7 +15,7 @@ It focuses on architecture decisions, debugging journeys, and lessons learned wh
 ## 📚 Posts
 
 <ul>
-{% assign posts = site.categories.SYSTEM | sort: "date" | reverse %}
+{% assign posts = site.categories.system | sort: "date" | reverse %}
 {% for post in posts %}
   <li>
     <a href="{{ post.url }}">
