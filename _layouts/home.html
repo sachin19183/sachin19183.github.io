@@ -1,28 +1,20 @@
 ---
 layout: archive
 ---
+
 {%- assign locale = page.locale | default: layout.locale | default: site.locale %}
 
-{{ content }}
-
+<!-- ⚙️ Start Here -->
 <section style="margin-bottom: 2em; padding: 1em; border: 1px solid #ddd; border-radius: 8px;">
-
   <h2>⚙️ Start Here</h2>
-
-  <p>
-    If you're new here, this post explains how this entire site is structured —
-    from GitHub Pages to Jekyll, categories, and custom architecture.
-  </p>
-
-  <p>
-    <a href="{{ site.baseurl }}{% post_url system/2026-03-29-buildingthesilentwarrior %}">
-      👉 How I Built thesilentwarrior.org
-    </a>
-  </p>
-
+  <p>If you're new, begin with how this site is structured.</p>
+  <a href="{{ site.baseurl }}{% post_url system/2026-03-29-buildingthesilentwarrior %}">
+    👉 How I Built this Site
+  </a>
 </section>
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[locale].recent_posts | default: "Recent Posts" }}</h3>
+<!-- 🆕 Recent Posts -->
+<h2>🆕 Latest Learnings</h2>
 
 {% if paginator %}
   {% assign posts = paginator.posts | slice: 0, 3 %}
@@ -30,9 +22,13 @@ layout: archive
   {% assign posts = site.posts | slice: 0, 3 %}
 {% endif %}
 
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-<div class="entries-{{ entries_layout }}">
-  {% include documents-collection.html locale=locale entries=posts type=entries_layout %}
+<div class="entries-list">
+  {% for post in posts %}
+    {% include archive-single.html %}
+  {% endfor %}
 </div>
 
-{% include paginator.html locale=locale %}
+<hr>
+
+<!-- 📚 Main Content -->
+{{ content }}
