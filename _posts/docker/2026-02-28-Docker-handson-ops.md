@@ -39,7 +39,7 @@ excerpt: "Docker handson commands used in day to day work arranged in a logical 
    ```
    Here we can run a limited set of linux command only as most containers only ship with essential apps and tools to keep them small.
 
-7. Exit from conatiner shell
+7. Exit from container shell
    ```bash
       exit
    ```
@@ -50,8 +50,8 @@ excerpt: "Docker handson commands used in day to day work arranged in a logical 
        docker rm <container-name>
        docker ps -a
    ```
-   the -a option of the ps command shows the container entry after stopping it. the same entry disappears once you remove itusing the docker rm command.
+   The -a option of the ps command shows the container entry after stopping it. The same entry disappears once you remove it using the docker rm command.
 
 
-This is a typical sequence of commands executed in a docker container lifecycle from and operation's perspective
+This is a typical sequence of commands executed in a docker container lifecycle from an operational engineer's perspective
 
