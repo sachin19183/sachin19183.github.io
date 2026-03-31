@@ -1,4 +1,4 @@
-title: "Silent Warrior Tech Notes"
+title: "Tech Blogs from a Silent Warrior"
 name: "Sachin"
 description: "Notes and explorations across Cloud Infrastructure, AI Systems, and Distributed Architecture."
 remote_theme: "mmistakes/minimal-mistakes"
@@ -13,7 +13,7 @@ analytics:
   provider: "google-gtag"
   google:
     tracking_id: "G-G0968414TJ"
-    anonymize_ip: false
+    anonymize_ip: true
 
 google_site_verification: KefY_ZWqzA3q_Uxxlf5eZa7d6g1H0xSPPg-VcgbdlBA
 
@@ -25,7 +25,16 @@ plugins:
   - jekyll-sitemap
 
 # Minimal Mistakes settings
+locale: "en-US"
+logo: "/assets/images/silentWarrorDP.png"
+
+search: true
+search_full_content: true
 breadcrumbs: true
+read_time: true
+words_per_minute: 200
+
+og_image: "/assets/images/sw_og.jpg"
 minimal_mistakes_skin: "contrast"
 
 author:
