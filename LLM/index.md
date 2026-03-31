@@ -13,7 +13,7 @@ This section contains my learnings, experiments, and architecture notes on Large
 ## 📚 Posts
 
 <ul>
-{% assign posts = site.categories.LLM | sort: "date" %}
+{% assign posts = site.categories.llm | sort: "date" %}
 {% for post in posts %}
   <li>
     <a href="{{ post.url }}">
