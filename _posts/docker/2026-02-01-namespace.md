@@ -2,6 +2,7 @@
 title: Linux Namespace- The isolation engine
 date: 2026-02-01
 categories: [docker]
+classess: wide
 tags: [containers, linux, namespaces, cgroups]
 excerpt: "Deep dive into how containers work internally, including namespaces, cgroups, and filesystem isolation."
 ---
@@ -65,7 +66,6 @@ There are several, but these 6 matter most:
 | UTS       | Hostname       | Container hostname                 |
 | IPC       | Shared Memory  | Isolated messaging                 |
 | USER      | UID/GID mapping| root inside != root outside        |
-
 
 
 ---
