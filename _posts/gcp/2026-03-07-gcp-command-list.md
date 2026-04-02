@@ -2,6 +2,7 @@
 title: "GCP commands List"
 date: 2026-03-07
 categories: [gcp]
+classes: wide
 tags: [gcloud, gsutil, pubsub, docker, commands]
 excerpt: "List of commands used within GCP for various operations" 
 ---
