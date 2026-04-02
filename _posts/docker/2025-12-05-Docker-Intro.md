@@ -2,6 +2,7 @@
 title: Introduction to Dockers
 date: 2025-12-05
 categories: [docker]
+classes: wide
 tags: [Fundamentals]
 ---
 
