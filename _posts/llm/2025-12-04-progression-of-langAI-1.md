@@ -2,6 +2,7 @@
 title: "History and Progression of Language AI Part-1"
 date: 2025-12-04
 categories: [llm]
+classes: wide
 tags: [Fundamentals]
 excerpt: "A journey into the history of how we progressed in large language models"
 ---
@@ -86,7 +87,6 @@ This leads to surprisingly meaningful behavior:
 
 ---
 
-
 Embeddings can have many properties to represent the meaning of a word. 
 Since the size of embeddings is fixed, their properties are chosen to create a mental representation of the word
 
@@ -96,7 +96,3 @@ Since the size of embeddings is fixed, their properties are chosen to create a m
 Together, these properties make sense to a computer and serve as a good way to translate human language into computer language.
 
 ---
-
-
-
-
