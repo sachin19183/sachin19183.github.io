@@ -2,6 +2,7 @@
 title: "Container Deep Dive — Under the Hood of Modern Containers"
 date: 2026-02-11
 categories: [docker]
+classess: wide
 tags: [containers, linux, namespaces, cgroups]
 excerpt: "Deep dive into how containers work internally, including namespaces, cgroups, and filesystem isolation."
 ---
