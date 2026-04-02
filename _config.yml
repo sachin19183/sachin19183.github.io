@@ -51,7 +51,7 @@ logo: "/assets/images/silentWarrorDP.png"
 link_color: "#2a7ae2"
 search: true
 search_full_content: true
-breadcrumbs: true
+breadcrumbs: false
 read_time: true
 words_per_minute: 200
 
