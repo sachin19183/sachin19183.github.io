@@ -28,9 +28,7 @@ Areas I am currently exploring and building:
 
 ---
 
-## The Silent Path
-
-My way of working aligns with an individual contributor mindset—a silent warrior who values deep focus, minimal noise, and letting the work speak for itself.
+## The Inner Path
 
 I occasionally document my inner voice, grounded in my morals and values. These reflections are non-technical, offering my perspective on work, problem-solving, navigating tough situations, and sometimes exploring lighter themes.
 
