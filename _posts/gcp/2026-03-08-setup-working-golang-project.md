@@ -2,6 +2,7 @@
 title: "How to setup a golang client server project in GCP"
 date: 2026-03-08
 categories: [gcp]
+classes: wide
 tags: [golang, gcp, cloudbucket, server, client, networking]
 excerpt: "Handson guide to setup a basic client server program written in GOLANG in google cloud "
 ---
@@ -14,25 +15,31 @@ Step-3 upload your project folder in this cloud storage bucket
 Step-4 For a simple project like this we will pick the google cloud build over google compute engine VM. Create cloud build configuration file.
 cloudbuild.yaml
 Step-5 copy the cloudbucket to your local folder, This should contain your code, the DockerFile and cloudbuild.yaml file
+
 ```bash
     gsutil cp -r gs://<cloud bucket path> .
 ```
 
 Step-6 build the service using cloudbuild
+
 ```bash
      gcloud builds submit --config cloudbuild.yaml
 ```   
+ 
  This docker image is stored in Artifact Registry. You can see it via url- gcr.io/<project name>/<image name>
  
  Another way to deploy which worked finally is from your local machine go to the code folder. from there open gitbach or powershell and execute this command to build the image .
+ 
  ```bash
      gcloud builds submit --tag gcr.io/golang-handson-439117/golang-server .
  ```
+
  Till now we have used Google Cloud Build to build the docker images, Now to deply these images, we can either use GKE (Kubernetes Engine) or GCE (Compute Engine)
  
  Deploying the Docker image on VM using GCE:
  1) create VM instance. ssh to that instance
  2) Install docker on this vm
+    
 ```bash
     sudo apt-get update
     sudo apt-get install -y docker.io
@@ -40,19 +47,23 @@ Step-6 build the service using cloudbuild
     sudo systemctl enable docker
 ```
 
-4) now pull the docker image for server 
+4) now pull the docker image for server
+   
 ```bash
     gcloud auth configure-docker gcr.io
     docker pull \
       gcr.io/golang-handson-439117/golang-server:latest
 ```
+
   These commands can be copied from the docker image screen (three vertical dots to the right, click and the option is there.)
 	I got two errors:
+	
 ```bash  
 	Error response from daemon: Head "https://gcr.io/v2/golang-handson-439117/golang-server/manifests/latest": denied: Unauthenticated request. Unauthenticated requests do not have permission "artifactregistry.repositories.downloadArtifacts" on resource "projects/golang-handson-439117/locations/us/repositories/gcr.io" (or it may not exist)
 ```
+
   First i verified that the image exist by going into the Artifact Registry-> gcr.io.
-	Then: Enable Artifact Registry API
+  Then: Enable Artifact Registry API
   To ensure that the API for accessing GCR is enabled, you can do the following:
 
 ## Go to Google Cloud Console.
