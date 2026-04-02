@@ -2,6 +2,7 @@
 title: "How I Built thesilentwarrior.org — From Notes to a Structured System"
 date: 2026-03-29
 categories: [system]
+classes: wide
 tags: [jekyll, github-pages, architecture, learning]
 excerpt: "A journal which covers my journey to create my first ever website for free using chatgpt. This also documents the mistakes and leasons learnt for other beginners"
 ---
@@ -22,7 +23,7 @@ It was a collaborative process:
 
 This blog is as much about that process as it is about the final system.
 
-------------------------------------------------------------------------
+---
 
 I strongly beleive in sharing knowledge, having constructive
 discussions, and improving yourself through that process. What started
@@ -32,7 +33,7 @@ it that way, but because things kept **not working the way I expected**.
 
 And each time something broke, I had to understand *the why part*.
 
-------------------------------------------------------------------------
+---
 
 ## Phase 1: "Just Put Everything in `_posts/`"
 
@@ -76,7 +77,7 @@ through the posts as it was a sequence sorted via dates mentioned in the
 filename and not the topics. I needed the structure around topics not
 dates.
 
-------------------------------------------------------------------------
+---
 
 ## Phase 2: "I Want a Category wise Page"
 
@@ -96,7 +97,7 @@ This is where things broke.
 
 ➡️ Clicking the link → **404**
 
-------------------------------------------------------------------------
+---
 
 ## Phase 3: The First Realization --- URLs Are Not Abstract
 
@@ -120,7 +121,7 @@ DOCKER/index.md
 
 That was my first structural shift.
 
-------------------------------------------------------------------------
+---
 
 ## Phase 4: Creating Category Pages (First Fix)
 
@@ -140,7 +141,7 @@ Problem solved?
 
 Not really.
 
-------------------------------------------------------------------------
+---
 
 ## Phase 5: "Why Is My Docker Page Empty?"
 
@@ -166,7 +167,7 @@ But this raised a deeper question:
 
 > Where is `site.categories.DOCKER` even coming from?
 
-------------------------------------------------------------------------
+---
 
 ## Phase 6: The Second Realization --- Categories Are Not Folder-Based
 
@@ -198,7 +199,7 @@ Without it in the post file:
 -   Your posts exist
 -   But your category page sees nothing
 
-------------------------------------------------------------------------
+---
 
 ## Phase 7: The System Finally Emerges
 
@@ -231,7 +232,7 @@ And category pages like:
 DOCKER/index.md
 ```
 
-------------------------------------------------------------------------
+---
 
 ## 🧠 Visualizing the Architecture
 
@@ -245,7 +246,7 @@ So I represented it like this:
 > A 3-layer system: physical folders → frontmatter categories → custom
 > rendered pages.
 
-------------------------------------------------------------------------
+---
 
 ## What my repository actually looks like now
 
@@ -274,7 +275,7 @@ But Jekyll works differently:
 
 That mismatch between expectation and reality is where the confusion came from.
 
-------------------------------------------------------------------------
+---
 
 ## Other Pieces That Fell Into Place
 
@@ -331,7 +332,7 @@ google:
 
 You don’t notice it—until something breaks.
 
-------------------------------------------------------------------------
+---
 
 ## The Domain Moment
 
@@ -352,7 +353,7 @@ It’s another example of:
 
 Small file. Big impact.
 
-------------------------------------------------------------------------
+---
 
 ## Phase 8: Making the Site Feel Like "Mine"
 
@@ -401,7 +402,7 @@ bio: "A knowledge seeker fighting the lazy mind..."
 
 This was the moment it stopped being "a site" and became **my site**.
 
-------------------------------------------------------------------------
+---
 
 ## Phase 9: Homepage Control
 
@@ -423,7 +424,7 @@ Now the site wasn't just static content.
 
 It had **logic**.
 
-------------------------------------------------------------------------
+---
 
 ## What This Journey Actually Taught Me
 
@@ -435,7 +436,7 @@ It had **logic**.
 
 ### 4. Most Problems Are Silent/Hidden in Plain Sight
 
-------------------------------------------------------------------------
+---
 
 ## What *thesilentwarrior.org* Is Now
 
@@ -448,7 +449,7 @@ It's a **structured knowledge system**:
 -   ML / LLM → evolving topics
 -   SYSTEM → how everything is built
 
-------------------------------------------------------------------------
+---
 
 ## Final Thought
 
@@ -467,4 +468,4 @@ As you browse through the articles, I want to be transparent about one thing: I 
 
 None of the articles are copy-pasted from AI. My purpose here is to learn along the way---not to publish a narrative that I don't truly understand or own.
 
-------------------------------------------------------------------------
+---
