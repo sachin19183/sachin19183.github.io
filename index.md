@@ -33,6 +33,6 @@ Areas I am currently exploring and building:
 
 I occasionally document my inner voice, grounded in my morals and values. These reflections are non-technical, offering my perspective on work, problem-solving, navigating tough situations, and sometimes exploring lighter themes.
 
-👉 [Explore The Path of the Silent Warrior](https://thesilentwarrior.org/path-of-the-silent-warrior/) 
+👉 [Explore The Inner Path](https://thesilentwarrior.org/path-of-the-silent-warrior/) 
 
 ---
