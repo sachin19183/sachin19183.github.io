@@ -2,6 +2,7 @@
 layout: home
 title: ""
 author_profile: true
+classes:wide
 ---
 
 ## Explore by Domain
