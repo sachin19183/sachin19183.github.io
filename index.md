@@ -26,8 +26,11 @@ classes: wide
 ## 🎯 Current Focus
 
 Areas I am currently exploring and building:
-- Game Backend Systems — building a game backend using Go + Python
+
 - Containerized Development — deploying services with Docker-based workflows
+- Game Backend Systems — building a game backend using Go + Python
+
+Next target is to build locally hosted llm based applications. This will be tried on mac and linux OS only.
 
 ---
 
