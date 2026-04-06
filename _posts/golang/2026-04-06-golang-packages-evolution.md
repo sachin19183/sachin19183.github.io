@@ -260,6 +260,8 @@ so the import path in code will look like this:
   <img src="/images/golang/code%20snippet.JPG" width="500"/>
 </p>
 
+As you can see here, the import path took the name we provided during "go mod init" command..
+
 ---
 
 ## 🟢 Final Thoughts
