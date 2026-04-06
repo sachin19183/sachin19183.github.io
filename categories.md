@@ -39,7 +39,7 @@ Architecture, networking, IAM, serverless, and certification insights.
 
 programming concepts , illustrations, examples, projects in golang
 
-👉 [Open GOLANG Index](/Golang/)
+👉 [Open GOLANG Index](/GOLANG/)
 
 ---
 
