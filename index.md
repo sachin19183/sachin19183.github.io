@@ -13,6 +13,8 @@ classes: wide
 | ☁️ GCP | Cloud architecture, IAM, networking, serverless | [Open](/GCP/) |
 | 🤖 LLM | Prompt engineering, RAG, agents, embeddings | [Open](/LLM/) |
 | 📊 ML | ML systems, pipelines, model deployment | [Open](/ML/) |
+| ⚙️ Golang | Concepts and inner details form this wonderful language | [Open](/GOLANG/) |
+
 
 👉 Choose a domain to begin, or explore the latest learnings below.
 
@@ -33,6 +35,6 @@ Areas I am currently exploring and building:
 
 I occasionally document my inner voice, grounded in my morals and values. These reflections are non-technical, offering my perspective on work, problem-solving, navigating tough situations, and sometimes exploring lighter themes.
 
-👉 [Explore The Inner Path](https://thesilentwarrior.org/path-of-the-silent-warrior/) 
+👉 [Explore The Inner Path of Silent Warrior](https://thesilentwarrior.org/path-of-the-silent-warrior/) 
 
 ---
