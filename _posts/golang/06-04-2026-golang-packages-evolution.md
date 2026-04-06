@@ -1,3 +1,13 @@
+---
+title: ""
+date: 2026-04-06
+categories: [golang]
+classes: wide
+tags: [modules, packages, golang]
+excerpt: "Get an overview on the changes in GO packages from 1.11 to later versions"
+---
+
+
 # From GOPATH to Go Modules: How Go Packages Evolved (With a Simple Example)
 
 As my liking is to learn from books, i chose *Head First Go*, to brush up my golang skills. While i was going through the packages topic. i found it very inconveineint to use the folder strucutre mentioned in the book.
