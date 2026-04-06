@@ -7,7 +7,7 @@ tags: [modules, packages, golang]
 excerpt: "Get a real understanding on how to structure your project and organize code effectively & encapsulate your logic"
 ---
 
-# From “How do I use packages?” to actually understanding Go structure
+# From “How do I use packages?” to actually understanding Go Project layout
 
 So I was learning Go and I hit this point where I asked:
 
