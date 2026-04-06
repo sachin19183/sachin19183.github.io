@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "From GOPATH to Go Modules"
 date: 2026-04-06
 categories: [golang]
 classes: wide
