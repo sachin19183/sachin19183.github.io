@@ -4,7 +4,7 @@ title: Golang Knowledge Index
 permalink: /GOLANG/
 ---
 
-# Golang — Knowledge Index
+# ⚙️ Golang — Knowledge Index
 
 This section documents my learnings on programing in Golang.
 
