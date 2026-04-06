@@ -287,4 +287,6 @@ Go has become much more flexible—and much easier to work with.
 
 ---
 
+If you want to understand more practical stuff on packages and project structure used in big Go projects, consider reading this post: [Go visibility across packages](./2026-04-06-go-visibility-across-packages.md)
+
 If you're learning Go today, you're already using the better version 🚀
