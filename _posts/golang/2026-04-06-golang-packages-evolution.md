@@ -244,14 +244,21 @@ Always use module-based imports:
 import "myapp/mathutils" // ✅ Correct
 ```
 
-The folder name we mention during go mod init is the name which is eventually used as the pathname in the code. I bymistake had committed a spelling mistake during go mod init command
-![Code](/images/golang/go-mod-init.JPG)
+The folder name we mention during go mod init is the name which is eventually used as the pathname in the code. I by mistake had committed a spelling mistake during go mod init command:
+<p align="center">
+  <img src="../images/golang/go-mod-init.JPG" width="400"/>
+</p>
 
 whereas the folder name was :
-![Code](/images/golang/folder-structure.JPG)
+<p align="center">
+  <img src="../images/golang/folder-structure.JPG" width="300"/>
+</p>
+
 
 so the import path in code will look like this:
-![Code](/images/golang/code%20snippet.JPG)
+<p>
+  <img src="../images/golang/code%20snippet.JPG" width="500"/>
+</p>
 
 ---
 
