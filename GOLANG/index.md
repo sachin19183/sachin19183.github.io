@@ -11,6 +11,9 @@ This section documents my learnings on programing in Golang.
 ---
 
 ## 📚 Posts
+<pre>
+{{ site.categories | inspect }}
+</pre>
 
 <ul>
 {% assign posts = site.categories.golang | sort: "date" %}
