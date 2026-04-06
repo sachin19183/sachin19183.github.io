@@ -35,6 +35,14 @@ Architecture, networking, IAM, serverless, and certification insights.
 
 ---
 
+## Golang
+
+programming concepts , illustrations, examples, projects in golang
+
+👉 [Open GOLANG Index](/Golang/)
+
+---
+
 ## 📊 Machine Learning (ML)
 
 ML fundamentals, pipelines, training, and deployment patterns.
@@ -54,11 +62,6 @@ Prompt engineering, RAG, agents, embeddings, and LLM systems.
 ## Coming Soon
 
    Working project lab in golang, python, containers
-
-
-
-
-
 
 
 _This repository evolves as I continue on my learning journey in hope that it can help you in some ways._
