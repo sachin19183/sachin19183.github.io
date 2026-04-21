@@ -1,5 +1,5 @@
 ---
-title: "Decode the http.HandleFunc() pattern"
+title: "The Internal working of Go Web programming"
 date: 2026-04-21
 categories: [golang]
 classes: wide
@@ -7,7 +7,7 @@ tags: [http, webserver, golang]
 excerpt: "Get to know the details about most commony used Go web server pattern"
 ---
 
-## The Basic of http.HandleFunc
+## Decode the http.HandleFunc() pattern 
 
 
 ```bash
@@ -403,14 +403,48 @@ It provides methods to
 - write nody
 - set status code
 
-Pls note that the order matters here. 
+An example code looks like this
+```bash
+http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+    w.Header().Set("Content-Type", "text/html")
+    fmt.Fprintf(w, "<h1>Welcome</h1><p>This is home page</p>")
+})
+```
+
+#### Set Headers
+
+```bash
+w.Header().Set("Content-Type", "text/html")
+fmt.Fprintf(w, "<h1>Hello</h1>")
+```
+Without proper header, the text "Hello" would display as plain text.
+
+You can also set a status code lets say for a page not found error like this:
+```bash
+w.WriteHeader(http.StatusNotFound)
+fmt.Fprintf(w, "Page not found")
+```
+
+### Internal flow
+
+When the request comes in, a browser tcp connection is opened. Go creates an object tied to that connection. 
+When w.Write() is invoked, Go sends bytes through the socket to browser.
+That is why the order matters here. 
 ```bash
 w.Header().Set(...)
 w.WriteHeader(...)
 w.Write(...)
 ```
-
-
+because once body starts writing (w.Write), some headers may have already be sent.
+```bash
+fmt.Fprintf(w, "Hello")
+w.WriteHeader(404)
+```
+would result in mistake as body has already started sending while we set the header as 404. The correct order is 
+```bash
+w.WriteHeader(404)
+fmt.Fprintf(w, "Not found")
+```
 
 
 ## Advice for big production grade programs
