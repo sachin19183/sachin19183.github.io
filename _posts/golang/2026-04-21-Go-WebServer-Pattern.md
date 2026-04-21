@@ -232,6 +232,185 @@ Your code reads r.Method / form data
 Response sent back
 ```
 
+### Browser HTML Form
+
+```bash
+<form action="/login" method="POST">
+  <input name="username">
+  <input name="password" type="password">
+  <button type="submit">Login</button>
+</form>
+```
+Lets take this example for the login page. This tells the browser to:
+- send data to /login
+- use POST
+- include form fields
+
+When the user clicks the submit button after filling the values for username and password, browser prepares a netwrk request.
+```bash
+POST /login HTTP/1.1
+Host: localhost:8080
+Content-Type: application/x-www-form-urlencoded
+
+username=raj&password=secret123
+```
+Lets decode this request
+
+#### Top Line POST /login HTTP/1.1
+
+This means the Method used is POST
+The Path is /login
+The protocol used is HTTP/1.1
+
+within GO it translates to 
+```bash
+r.Method   // POST
+r.URL.Path // /login
+```
+
+#### Headers
+
+```text
+Host: localhost:8080
+Content-Type: application/x-www-form-urlencoded
+```
+This is the metadata abot the request and is translated to r.Header in Go.
+
+#### Body
+```text
+username=raj&password=secret123
+```
+This is the actual submitted form data. Pls note that the data is part of the Body.
+A general sugestion for new developers is to always use POST for :
+- passwords
+- forms
+- creation actions
+  This is because sensitive data shoul not go in the URL. Had we used the GEt method here then the browser would have sent this:
+```bash
+GET /login?username=raj&password=secret123
+```
+
+In general GET method should be used for fetching page/data only.
+
+#### Request reaches the Go server
+
+```text
+http.ListenAndServe(":8080", nil)
+```
+The go server listens on port 8080 and waits for the incoming request once this request reaches, it matches the path
+
+```bash
+http.HandleFunc("/login", loginHandler)
+```
+As its a direct match, it executes the corresponding code
+```bash
+func loginHandler(w http.ResponseWriter, r *http.Request) {
+```
+Go passes:
+- w -> response writer
+- r -> request object
+
+Then the code check method gets invoked
+```bash
+if r.Method == "POST" {
+```
+now comes the logic for reading the form data:
+```bash
+r.ParseForm()
+
+username := r.FormValue("username")
+password := r.FormValue("password")
+```
+On execution of these lines, the variables username will contain raj and password will contain secret123
+Here is the complete code sample
+```bash
+package main
+
+import (
+    "fmt"
+    "net/http"
+)
+
+func loginHandler(w http.ResponseWriter, r *http.Request) {
+    if r.Method == "GET" {
+        fmt.Fprintf(w, `
+            <form action="/login" method="POST">
+                <input name="username">
+                <input name="password" type="password">
+                <button type="submit">Login</button>
+            </form>
+        `)
+        return
+    }
+
+    if r.Method == "POST" {
+        r.ParseForm()
+
+        username := r.FormValue("username")
+
+        fmt.Fprintf(w, "Welcome %s", username)
+        return
+    }
+}
+
+func main() {
+    http.HandleFunc("/login", loginHandler)
+    http.ListenAndServe(":8080", nil)
+}
+```
+
+
+## Understanding the http.ResponseWriter
+
+Inside the handler function
+```bash
+func(w http.ResponseWriter, r *http.Request)
+```
+w is the connection back to the browser. So when broweser asks for something , go gives you a pipe to reply through. 
+ResponseWriter is that pipe.
+Lets take an example where you need to write "Hello World" in the HTTP response towars the browser.
+Browser sends the request GET /hello
+```bash
+http.HandleFunc("/hello", func(w http.ResponseWriter, r *http.Request) {
+    fmt.Fprintf(w, "Hello World")
+})
+```
+Here fmt.Fprintf() calls w.Write() internally. This could have been replaced by
+```bash
+w.Write([]byte("Hello World"))
+```
+Now the Go server builds the HTTP response
+```bash
+HTTP/1.1 200 OK
+Content-Length: 11
+Content-Type: text/plain; charset=utf-8
+
+Hello World
+```
+Browser reads the response body and renders it on the screen.
+
+### Internally ResponseWriter is an Interface
+
+```bash
+type ResponseWriter interface {
+    Header() Header
+    Write([]byte) (int, error)
+    WriteHeader(statusCode int)
+}
+```
+It provides methods to 
+- set headers
+- write nody
+- set status code
+
+Pls note that the order matters here. 
+```bash
+w.Header().Set(...)
+w.WriteHeader(...)
+w.Write(...)
+```
+
+
 
 
 ## Advice for big production grade programs
