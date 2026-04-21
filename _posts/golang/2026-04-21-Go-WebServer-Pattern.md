@@ -1,5 +1,5 @@
 ---
-title: "The Internal working of Go Web programming"
+title: "The Internal working of Go Web programming- Part 1"
 date: 2026-04-21
 categories: [golang]
 classes: wide
